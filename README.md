@@ -20,7 +20,7 @@ $ npm install -g cdwr-cli
 $ cdwr COMMAND
 running command...
 $ cdwr (--version)
-cdwr-cli/0.0.2 darwin-arm64 node-v16.19.0
+cdwr-cli/0.0.3 darwin-arm64 node-v16.19.0
 $ cdwr --help [COMMAND]
 USAGE
   $ cdwr COMMAND
@@ -65,7 +65,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/hello/index.ts](https://github.com/codeware-sthlm/cdwr-cli/blob/v0.0.2/dist/commands/hello/index.ts)_
+_See code: [dist/commands/hello/index.ts](https://github.com/codeware-sthlm/cdwr-cli/blob/v0.0.3/dist/commands/hello/index.ts)_
 
 ## `cdwr hello world`
 
