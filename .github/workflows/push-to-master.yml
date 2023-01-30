@@ -1,9 +1,10 @@
-# test
-name: version, tag and github release
+# TODO: need to set secrets?
+
+name: Version, tag and github release
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   release:

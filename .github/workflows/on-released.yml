@@ -1,4 +1,6 @@
-name: publish
+# TODO: need to set secrets?
+
+name: Publish to NPM
 
 on:
   release:

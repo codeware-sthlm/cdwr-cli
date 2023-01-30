@@ -1,4 +1,6 @@
-name: manual release
+# TODO: need to update 'changelog' step?
+
+name: Manual release
 
 on:
   workflow_dispatch:
