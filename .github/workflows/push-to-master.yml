@@ -1,4 +1,5 @@
 # TODO: need to set secrets?
+# Fix error: "input required and not supplied: token"
 
 name: Version, tag and github release
 

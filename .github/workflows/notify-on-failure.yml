@@ -3,8 +3,9 @@ name: Failure notification
 on:
   workflow_run:
     workflows:
-      - Version, tag and github release
-      - Publish to NPM
+      - todo_activate_valid_workflows_when_stable
+      # - Version, tag and github release
+      # - Publish to NPM
     types:
       - completed
 
