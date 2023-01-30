@@ -554,6 +554,17 @@
     fast-levenshtein "^3.0.0"
     lodash "^4.17.21"
 
+"@oclif/plugin-search@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-search/-/plugin-search-0.0.11.tgz#43f756798d44e6d57419db2950855db3c3b66bf9"
+  integrity sha512-zOiLLfg5/Jt7g8J+txFm4tjHl2jRKgj7KyX4rQsS+UjvySs4V0qtt1CPAvaAZrbjFDCzzRwVXaaDFdQyiWWL1A==
+  dependencies:
+    "@oclif/core" "^2.0.3"
+    chalk "^4"
+    fuse.js "^6.6.2"
+    inquirer "^8.2.5"
+    rxjs "^7.8.0"
+
 "@oclif/plugin-update@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.1.tgz#5afc5dd80483d1635bd6721532379d342df328a9"
@@ -571,6 +582,13 @@
     log-chopper "^1.0.2"
     semver "^7.3.8"
     tar-fs "^2.1.1"
+
+"@oclif/plugin-version@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-version/-/plugin-version-1.2.1.tgz#b1e36dc6dfd4a228e3b45f675b53a10b2b8b4c01"
+  integrity sha512-Xb7MECv9uSaxIuzPbgJnOZEf0gnHlcLdncBkJCn5vsMnt1hC91j65feGeY8c68vsrAi6SumOfI8C63v8gC+FEA==
+  dependencies:
+    "@oclif/core" "^2.0.3"
 
 "@oclif/plugin-warn-if-update-available@^2.0.14", "@oclif/plugin-warn-if-update-available@^2.0.24":
   version "2.0.24"
@@ -1413,7 +1431,7 @@ chalk@^2.0.0:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chalk@^4.0.0, chalk@^4.0.2, chalk@^4.1.0, chalk@^4.1.1, chalk@^4.1.2:
+chalk@^4, chalk@^4.0.0, chalk@^4.0.2, chalk@^4.1.0, chalk@^4.1.1, chalk@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
   integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
@@ -2369,6 +2387,11 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha512-dsKNQNdj6xA3T+QlADDA7mOSlX0qiMINjn0cgr+eGHGsbSHzTabcIogz2+p/iqP1Xs6EP/sS2SbqH+brGTbq0g==
+
+fuse.js@^6.6.2:
+  version "6.6.2"
+  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-6.6.2.tgz#fe463fed4b98c0226ac3da2856a415576dc9a111"
+  integrity sha512-cJaJkxCCxC8qIIcPBF9yGxY0W/tVZS3uEISDxhYIdtk8OL93pe+6Zj7LjCqVV4dzbqcriOZ+kQ/NE4RXZHsIGA==
 
 gauge@^3.0.0:
   version "3.0.2"
@@ -4262,7 +4285,7 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-rxjs@^7.0.0, rxjs@^7.5.5:
+rxjs@^7.0.0, rxjs@^7.5.5, rxjs@^7.8.0:
   version "7.8.0"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.8.0.tgz#90a938862a82888ff4c7359811a595e14e1e09a4"
   integrity sha512-F2+gxDshqmIub1KdvZkaEfGDwLNpPvk9Fs6LD/MyQxNgMds/WH9OdDDXOmxUZpME+iSK3rQCctkL0DYyytUqMg==
