@@ -1,0 +1,40 @@
+name: Version, tag and github release
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Conventional Changelog Action
+        id: changelog
+        uses: TriPSs/conventional-changelog-action@d360fad3a42feca6462f72c97c165d60a02d4bf2
+        with:
+          tag-prefix: ''
+          release-count: '0'
+          # ternary-ish: https://github.com/actions/runner/issues/409#issuecomment-752775072
+          output-file: 'CHANGELOG.md'
+
+      - name: Create Github Release
+        uses: actions/create-release@v1
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.changelog.outputs.tag }}
+          release_name: ${{ steps.changelog.outputs.tag }}
+          body: ${{ steps.changelog.outputs.clean_changelog }}
+          #prerelease: ${{ inputs.prerelease }}
+
+  # most repos won't use this
+  # depends on previous job to avoid git collisions, not for any functionality reason
+  # docs:
+  #   uses: salesforcecli/github-workflows/.github/workflows/publishTypedoc.yml@main
+  #   secrets: inherit
+  #   needs: release
