@@ -4,8 +4,7 @@ on:
   workflow_run:
     workflows:
       - todo_activate_valid_workflows_when_stable
-      # - Version, tag and github release
-      # - Publish to NPM
+      # - Release
     types:
       - completed
 
