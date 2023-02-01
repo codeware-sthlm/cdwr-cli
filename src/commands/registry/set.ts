@@ -1,15 +1,14 @@
-import { Args, Command } from '@oclif/core';
+import { Args, Command, ux } from '@oclif/core';
 import * as inquirer from 'inquirer';
-
-const LocationOptions = ['local', 'remote'];
+import { LOCAL_NPM_REGISTRY, LOCATION_OPTIONS } from '.';
+import { exec } from '../../libs/node-helpers';
 
 export default class RegistrySet extends Command {
   static description = 'Set the active registry location';
 
-  static examples = [
-    '<%= config.bin %> <%= command.id %> local',
-    '<%= config.bin %> <%= command.id %> remote'
-  ];
+  static examples = Object.values(LOCATION_OPTIONS).map(
+    (key) => `<%= config.bin %> <%= command.id %> ${key}`
+  );
 
   static flags = {};
 
@@ -17,7 +16,7 @@ export default class RegistrySet extends Command {
     location: Args.string({
       name: 'location',
       description: 'Registry location',
-      options: LocationOptions
+      options: Object.values(LOCATION_OPTIONS)
     })
   };
 
@@ -31,12 +30,27 @@ export default class RegistrySet extends Command {
           name: 'location',
           message: 'Select a location',
           type: 'list',
-          choices: LocationOptions.map((option) => ({ name: option }))
+          choices: Object.values(LOCATION_OPTIONS).map((option) => ({
+            name: option
+          }))
         }
       ]);
       location = resp.location;
+      this.log();
     }
 
-    this.log(`TODO: Set registry to '${location}'`);
+    let cmd = '';
+    if (location === 'local') {
+      cmd = `npm config set registry ${LOCAL_NPM_REGISTRY} --location user`;
+    } else if (location === 'remote') {
+      cmd = 'npm config delete registry --location user';
+    }
+
+    ux.action.start(`Setting registry to ${location}`);
+
+    await exec(cmd);
+
+    ux.action.stop();
+    this.log();
   }
 }

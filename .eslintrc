@@ -5,6 +5,11 @@
     "comma-dangle": ["error", "never"],
     "indent": ["error", 2, { "MemberExpression": 1 }],
     "object-curly-spacing": ["error", "always"],
+    "operator-linebreak": [
+      "error",
+      "after",
+      { "overrides": { "?": "before", ":": "before" } }
+    ],
     "semi": ["error", "always"]
   }
 }

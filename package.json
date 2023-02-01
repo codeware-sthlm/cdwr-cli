@@ -17,7 +17,8 @@
     "@oclif/plugin-update": "^3.1.1",
     "@oclif/plugin-version": "^1.2.1",
     "@oclif/plugin-warn-if-update-available": "^2.0.24",
-    "inquirer": "^8.2.3"
+    "inquirer": "^8.2.3",
+    "verdaccio": "^5.20.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
@@ -76,6 +77,7 @@
       }
     }
   },
+  "private": true,
   "repository": "codeware-sthlm/cdwr-cli",
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
