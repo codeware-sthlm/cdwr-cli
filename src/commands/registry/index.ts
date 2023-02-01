@@ -47,33 +47,3 @@ export default class Registry extends Command {
     this.log();
   }
 }
-
-// const config = {
-//   storage: './storage',
-//   auth: {
-//     htpasswd: {
-//       file: './htpasswd'
-//     }
-//   },
-//   uplinks: {
-//     npmjs: {
-//       url: 'https://registry.npmjs.org/'
-//     }
-//   },
-//   self_path: './',
-//   packages: {
-//     '@*/*': {
-//       access: '$all',
-//       publish: '$authenticated',
-//       proxy: 'npmjs'
-//     },
-//     '**': {
-//       proxy: 'npmjs'
-//     }
-//   },
-//   log: {
-//     type: 'stdout',
-//     format: 'pretty',
-//     level: 'http'
-//   }
-// };
