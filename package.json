@@ -77,7 +77,7 @@
       }
     }
   },
-  "private": true,
+  "private": false,
   "repository": "codeware-sthlm/cdwr-cli",
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
