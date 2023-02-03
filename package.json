@@ -78,6 +78,10 @@
     }
   },
   "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": "codeware-sthlm/cdwr-cli",
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
