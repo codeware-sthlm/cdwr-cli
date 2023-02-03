@@ -19,12 +19,12 @@ export default class Registry extends Command {
   public async run(): Promise<void> {
     ux.action.start('Loading');
 
-    const resp = await exec('npm config get registry --location user');
-    const npmSetting = resp.stdout.replace('\n', '');
-    const location =
-      npmSetting === LOCAL_NPM_REGISTRY
-        ? LOCATION_OPTIONS.LOCAL
-        : LOCATION_OPTIONS.REMOTE;
+    const resp = await Promise.all([
+      exec('npm config get registry --location user'),
+      exec('yarn config get registry')
+    ]);
+    const npmSetting = resp[0].stdout.replace('\n', '');
+    const yarnSetting = resp[1].stdout.replace('\n', '');
 
     ux.action.stop();
     this.log();
@@ -35,7 +35,18 @@ export default class Registry extends Command {
         {
           key: 'npm',
           value: npmSetting,
-          location
+          location:
+            npmSetting === LOCAL_NPM_REGISTRY
+              ? LOCATION_OPTIONS.LOCAL
+              : LOCATION_OPTIONS.REMOTE
+        },
+        {
+          key: 'yarn',
+          value: yarnSetting,
+          location:
+            yarnSetting === LOCAL_NPM_REGISTRY
+              ? LOCATION_OPTIONS.LOCAL
+              : LOCATION_OPTIONS.REMOTE
         }
       ],
       {

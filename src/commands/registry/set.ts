@@ -39,16 +39,22 @@ export default class RegistrySet extends Command {
       this.log();
     }
 
-    let cmd = '';
+    const results = [];
     if (location === 'local') {
-      cmd = `npm config set registry ${LOCAL_NPM_REGISTRY} --location user`;
+      results.push(
+        exec(`npm config set registry ${LOCAL_NPM_REGISTRY} --location user`),
+        exec(`yarn config set registry ${LOCAL_NPM_REGISTRY}`)
+      );
     } else if (location === 'remote') {
-      cmd = 'npm config delete registry --location user';
+      results.push(
+        exec('npm config delete registry --location user'),
+        exec('yarn config delete registry')
+      );
     }
 
     ux.action.start(`Setting registry to ${location}`);
 
-    await exec(cmd);
+    await Promise.all(results);
 
     ux.action.stop();
     this.log();
