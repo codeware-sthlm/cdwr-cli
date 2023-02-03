@@ -90,8 +90,5 @@
     "version": "oclif readme && git add README.md",
     "semantic-release": "semantic-release"
   },
-  "types": "dist/index.d.ts",
-  "publishConfig": {
-    "access": "restricted"
-  }
+  "types": "dist/index.d.ts"
 }
