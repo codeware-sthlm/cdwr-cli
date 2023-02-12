@@ -1,7 +1,7 @@
 {
   "name": "@cdwr/cli",
   "description": "Codeware Sthlm Developer CLI",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "author": "Codeware Sthlm",
   "bin": {
     "cdwr": "./bin/run"
@@ -75,6 +75,7 @@
       "@oclif/plugin-version",
       "@oclif/plugin-warn-if-update-available"
     ],
+    "description": "Codeware Sthlm Developer CLI\n🔧 This CLI is still regarded as beta and work in progress",
     "topicSeparator": " ",
     "topics": {
       "registry": {
