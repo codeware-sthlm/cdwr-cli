@@ -1,4 +1,5 @@
 {
+  "plugins": ["import"],
   "extends": ["oclif", "oclif-typescript"],
   "rules": {
     "arrow-parens": ["error", "always"],
@@ -11,5 +12,53 @@
       { "overrides": { "?": "before", ":": "before" } }
     ],
     "semi": ["error", "always"]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.js"],
+      "rules": {
+        "sort-imports": [
+          "error",
+          {
+            "ignoreCase": false,
+            "ignoreDeclarationSort": true,
+            "ignoreMemberSort": false,
+            "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+            "allowSeparatedGroups": true
+          }
+        ],
+        "import/order": [
+          "error",
+          {
+            "groups": [
+              "builtin",
+              "external",
+              "internal",
+              ["sibling", "parent"],
+              "index",
+              "unknown"
+            ],
+            "pathGroups": [
+              {
+                "pattern": "./**",
+                "group": "index",
+                "position": "after"
+              }
+            ],
+            "pathGroupsExcludedImportTypes": ["builtin"],
+            "newlines-between": "always",
+            "alphabetize": {
+              "order": "asc",
+              "caseInsensitive": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "files": "*.json",
+      "parser": "jsonc-eslint-parser",
+      "rules": {}
+    }
+  ]
 }
