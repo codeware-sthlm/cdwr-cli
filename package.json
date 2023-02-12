@@ -29,13 +29,18 @@
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.18.11",
     "chai": "^4",
+    "cz-git": "^1.4.1",
+    "czg": "^1.4.1",
     "eslint": "^7.32.0",
     "eslint-config-oclif": "^4",
     "eslint-config-oclif-typescript": "^1.0.3",
+    "eslint-plugin-import": "^2.27.5",
     "husky": "^8.0.3",
+    "is-ci": "^3.0.1",
+    "lint-staged": "^13.1.1",
     "mocha": "^9",
     "oclif": "^3",
-    "semantic-release": "^20.1.0",
+    "prettier": "^2.8.4",
     "shx": "^0.3.3",
     "ts-node": "^10.9.1",
     "tslib": "^2.5.0",
@@ -84,6 +89,7 @@
   },
   "repository": "codeware-sthlm/cdwr-cli",
   "scripts": {
+    "commit": "git czg",
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint . --ext .ts --config .eslintrc",
     "postpack": "shx rm -f oclif.manifest.json",
@@ -92,7 +98,24 @@
     "release:local": "oclif pack tarballs",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md",
-    "semantic-release": "semantic-release"
+    "prepare": "is-ci || husky install"
   },
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git",
+      "useEmoji": true
+    }
+  },
+  "lint-staged": {
+    "*.{css,less,scss,html,json,js,ts}": [
+      "prettier --write ."
+    ],
+    "*.js": "eslint --fix"
+  }
 }
