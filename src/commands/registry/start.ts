@@ -1,5 +1,6 @@
-import { Command, Flags, ux } from '@oclif/core';
 import { spawn } from 'node:child_process';
+
+import { Command, Flags, ux } from '@oclif/core';
 
 export default class RegistryStart extends Command {
   static description = 'Start local registry hosted by verdaccio';
