@@ -5,14 +5,14 @@ describe('registry:set', () => {
     .stdout()
     .command(['registry:set', 'local'])
     .it('should set local registry', (ctx) => {
-      expect(ctx.stdout).to.contain("TODO: Set registry to 'local'");
+      expect(ctx.stdout).to.contain("Setting registry to 'local'");
     });
 
   test
     .stdout()
     .command(['registry:set', 'remote'])
     .it('should set remote registry', (ctx) => {
-      expect(ctx.stdout).to.contain("TODO: Set registry to 'remote'");
+      expect(ctx.returned).to.contain("Setting registry to 'remote'");
     });
 
   // TODO: handle user prompt

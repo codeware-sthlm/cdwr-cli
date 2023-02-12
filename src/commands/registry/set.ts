@@ -1,6 +1,7 @@
 import { Args, Command, ux } from '@oclif/core';
 import * as inquirer from 'inquirer';
-import { LOCAL_NPM_REGISTRY, LOCATION_OPTIONS } from '.';
+
+import { LOCATION_OPTIONS, REGISTRIES } from '../../libs/definitions';
 import { exec } from '../../libs/node-helpers';
 
 export default class RegistrySet extends Command {
@@ -39,18 +40,9 @@ export default class RegistrySet extends Command {
       this.log();
     }
 
-    const results = [];
-    if (location === 'local') {
-      results.push(
-        exec(`npm config set registry ${LOCAL_NPM_REGISTRY} --location user`),
-        exec(`yarn config set registry ${LOCAL_NPM_REGISTRY}`)
-      );
-    } else if (location === 'remote') {
-      results.push(
-        exec('npm config delete registry --location user'),
-        exec('yarn config delete registry')
-      );
-    }
+    const results = Object.values(REGISTRIES).map(({ set, remove }) =>
+      exec(location === 'local' ? set : remove)
+    );
 
     ux.action.start(`Setting registry to ${location}`);
 
