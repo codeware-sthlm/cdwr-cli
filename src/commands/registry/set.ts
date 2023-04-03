@@ -1,8 +1,8 @@
 import { Args, Command, ux } from '@oclif/core';
 import * as inquirer from 'inquirer';
 
-import { LOCATION_OPTIONS, REGISTRIES } from '../../libs/definitions';
-import { exec } from '../../libs/node-helpers';
+import { LOCATION_OPTIONS, REGISTRIES } from '@cdwr/libs/definitions';
+import { exec } from '@cdwr/libs/utils';
 
 export default class RegistrySet extends Command {
   static description = 'Set the active registry location';
