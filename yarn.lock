@@ -808,10 +808,10 @@
     supports-color "^8.1.1"
     tslib "^2"
 
-"@oclif/core@^2", "@oclif/core@^2.0.3", "@oclif/core@^2.0.8", "@oclif/core@^2.1.2", "@oclif/core@^2.1.6":
-  version "2.1.7"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.1.7.tgz#d51d8758a195bb0d813d19a89b286756ddb0b51b"
-  integrity sha512-6QZvUmKHLqrESIW4mu8azE0sQ7I9LVC3iM9O4ipp53Pqe5pQhIyxv8tB/zvagmPxJXXiCbfPsBazeqjCcM3/tg==
+"@oclif/core@^2", "@oclif/core@^2.0.3", "@oclif/core@^2.0.8", "@oclif/core@^2.1.2", "@oclif/core@^2.1.6", "@oclif/core@^2.7.1":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.8.0.tgz#4948de3168804169fa68895af8ec4853f332b307"
+  integrity sha512-A2wHItFrD/WOw5bJ6Mtv9MD7If0bsKNR0pwEY0me+fo4HSXlJOtgYGqmzb8t8akX3DUUT7XsjPajsoHLkIJyvg==
   dependencies:
     "@types/cli-progress" "^3.11.0"
     ansi-escapes "^4.3.2"
@@ -819,7 +819,7 @@
     cardinal "^2.1.1"
     chalk "^4.1.2"
     clean-stack "^3.0.1"
-    cli-progress "^3.11.2"
+    cli-progress "^3.12.0"
     debug "^4.3.4"
     ejs "^3.1.8"
     fs-extra "^9.1.0"
@@ -837,6 +837,7 @@
     strip-ansi "^6.0.1"
     supports-color "^8.1.1"
     supports-hyperlinks "^2.2.0"
+    ts-node "^10.9.1"
     tslib "^2.5.0"
     widest-line "^3.1.0"
     wordwrap "^1.0.0"
@@ -888,13 +889,13 @@
     inquirer "^8.2.5"
     rxjs "^7.8.0"
 
-"@oclif/plugin-update@^3.1.1":
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.4.tgz#d77a505482a2758bbbc757657a7456f7e9f11765"
-  integrity sha512-AJp5i1ePvBw5jLjF7BEXReASWxlM/U9ON2fEppwNVptLi5xz86vNc/qw8/KXcIUqNdwXy03XNoetrs6VzTmS6Q==
+"@oclif/plugin-update@^3.1.9":
+  version "3.1.9"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.9.tgz#5ffc3530106d7c3bc32f2b724f533af24170b2d0"
+  integrity sha512-RPrW2rUxtcZ51hpXndfINbCye2Wz0qfNQk8dcmbn6qhOPAm2A02By/N5Oa4ru9OMTPVQCzHEicr1oWU94g83AA==
   dependencies:
     "@oclif/color" "^1.0.4"
-    "@oclif/core" "^2.1.2"
+    "@oclif/core" "^2.7.1"
     cross-spawn "^7.0.3"
     debug "^4.3.1"
     filesize "^6.1.0"
@@ -2607,10 +2608,10 @@ cli-cursor@^3.1.0:
   dependencies:
     restore-cursor "^3.1.0"
 
-cli-progress@^3.11.2:
-  version "3.11.2"
-  resolved "https://registry.yarnpkg.com/cli-progress/-/cli-progress-3.11.2.tgz#f8c89bd157e74f3f2c43bcfb3505670b4d48fc77"
-  integrity sha512-lCPoS6ncgX4+rJu5bS3F/iCz17kZ9MPZ6dpuTtI0KXKABkhyXIdYB3Inby1OpaGti3YlI3EeEkM9AuWpelJrVA==
+cli-progress@^3.12.0:
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/cli-progress/-/cli-progress-3.12.0.tgz#807ee14b66bcc086258e444ad0f19e7d42577942"
+  integrity sha512-tRkV3HJ1ASwm19THiiLIXLO7Im7wlTuKnvkYaTkyoAPefqjNg7W7DHKUlGRxy9vxDvbyCYQkQozvptuMkGCg8A==
   dependencies:
     string-width "^4.2.3"
 
