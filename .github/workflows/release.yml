@@ -16,6 +16,8 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          # https://semantic-release.gitbook.io/semantic-release/recipes/ci-configurations/github-actions#pushing-package.json-changes-to-a-master-branch
+          persist-credentials: false
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
