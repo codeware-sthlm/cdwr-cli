@@ -5,27 +5,26 @@ on:
       - master
       - next
       - release
-      - '+([0-9])?(.{+([0-9]),x}).x'
-
+      - '*.x'
+permissions:
+  contents: read # for checkout
 jobs:
   release:
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          fetch-depth: 0
-          # https://semantic-release.gitbook.io/semantic-release/recipes/ci-configurations/github-actions#pushing-package.json-changes-to-a-master-branch
-          persist-credentials: false
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
+          cache: yarn
           node-version: 'lts/*'
-      - name: Install dependencies
-        run: yarn
-      - name: Release
+      - run: yarn
+      - run: yarn semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn semantic-release
