@@ -24,8 +24,6 @@ This is a CLI to make local development a bit easier and structured. Some common
 
 Though it's a public repo this CLI is aimed for Codeware Sthlm developers. If anyone finds it useful we're more than happy to share our code, or the CLI itself from NPM.
 
-> 🔧 Consider this CLI as beta at the moment since we have just started to add features
-
 # Recipes
 
 ## Setup a local npm registry using verdaccio

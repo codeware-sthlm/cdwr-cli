@@ -86,7 +86,7 @@
       "@oclif/plugin-version",
       "@oclif/plugin-warn-if-update-available"
     ],
-    "description": "Codeware Sthlm Developer CLI\n🔧 This CLI is still regarded as beta and work in progress",
+    "description": "Codeware Sthlm Developer CLI",
     "topicSeparator": " ",
     "topics": {
       "registry": {
