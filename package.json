@@ -1,7 +1,7 @@
 {
   "name": "@cdwr/cli",
   "description": "Codeware Sthlm Developer CLI",
-  "version": "1.2.2",
+  "version": "1.2.3-rc.1",
   "author": "Codeware Sthlm",
   "bin": {
     "cdwr": "./bin/run"
@@ -14,7 +14,6 @@
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-not-found": "^2.3.17",
     "@oclif/plugin-search": "^0.0.11",
-    "@oclif/plugin-update": "^3.1.1",
     "@oclif/plugin-version": "^1.2.1",
     "@oclif/plugin-warn-if-update-available": "^2.0.24",
     "inquirer": "^8.2.3",
@@ -52,6 +51,7 @@
     "prettier": "^2.8.4",
     "rxjs": "^7.8.0",
     "semantic-release": "^21.0.1",
+    "semantic-release-slack-bot": "^4.0.1",
     "shx": "^0.3.3",
     "ts-node": "^10.9.1",
     "tsc-alias": "^1.8.5",
@@ -84,11 +84,10 @@
       "@oclif/plugin-help",
       "@oclif/plugin-not-found",
       "@oclif/plugin-search",
-      "@oclif/plugin-update",
       "@oclif/plugin-version",
       "@oclif/plugin-warn-if-update-available"
     ],
-    "description": "Codeware Sthlm Developer CLI\n🔧 This CLI is still regarded as beta and work in progress",
+    "description": "Codeware Sthlm Developer CLI",
     "topicSeparator": " ",
     "topics": {
       "registry": {
@@ -123,8 +122,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "node_modules/cz-git",
-      "useEmoji": true
+      "path": "node_modules/cz-git"
     }
   },
   "lint-staged": {
