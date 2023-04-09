@@ -4,7 +4,6 @@ on:
   workflow_run:
     workflows:
       - todo_activate_valid_workflows_when_stable
-      - Release
     types:
       - completed
 
