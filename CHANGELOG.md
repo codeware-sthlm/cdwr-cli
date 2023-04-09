@@ -6,6 +6,14 @@
 * **docs:** :bug: extracted readme should not affect repo by release ([9e99897](https://github.com/codeware-sthlm/cdwr-cli/commit/9e998973ba49b1c8896fa69d6fff04e8fddf6045))
 * remove update plugin since not compatible with npm registry ([f119cdc](https://github.com/codeware-sthlm/cdwr-cli/commit/f119cdcfb6a5cc30df0d64297d089a1515a34ace))
 
+## [1.2.3-rc.1](https://github.com/codeware-sthlm/cdwr-cli/compare/v1.2.2...v1.2.3-rc.1) (2023-04-09)
+
+
+### Bug Fixes
+
+* **docs:** :bug: extracted readme should not affect repo by release ([9e99897](https://github.com/codeware-sthlm/cdwr-cli/commit/9e998973ba49b1c8896fa69d6fff04e8fddf6045))
+* remove update plugin since not compatible with npm registry ([f119cdc](https://github.com/codeware-sthlm/cdwr-cli/commit/f119cdcfb6a5cc30df0d64297d089a1515a34ace))
+
 ## [1.2.2](https://github.com/codeware-sthlm/cdwr-cli/compare/v1.2.1...v1.2.2) (2023-04-07)
 
 ### Bug Fixes
