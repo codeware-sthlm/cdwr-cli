@@ -1,5 +1,6 @@
 name: Release
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -26,3 +27,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_SEMVER_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          SLACK_DEVOPS_WEBHOOK: ${{ secrets.SLACK_DEVOPS_WEBHOOK }}
