@@ -1,5 +1,7 @@
 const { SLACK_DEVOPS_WEBHOOK } = process.env;
 
+console.log('DEBUG: process.env', process.env);
+
 /* eslint-disable no-template-curly-in-string */
 /* eslint-disable unicorn/prefer-module */
 /** @type {import('@types/semantic-release').Options} */
