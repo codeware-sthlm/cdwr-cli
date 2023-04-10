@@ -1,11 +1,10 @@
 name: CI
 on:
   push:
-    branches-ignore: [master]
   workflow_dispatch:
 
 jobs:
-  unit-tests:
+  guard:
     strategy:
       matrix:
         os: ['ubuntu-latest', 'windows-latest']
@@ -20,4 +19,5 @@ jobs:
           cache: yarn
       - run: yarn install --network-timeout 600000
       - run: yarn build
+      - run: yarn lint
       - run: yarn test
