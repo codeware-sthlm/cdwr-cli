@@ -59,7 +59,7 @@ $ npm install -g @cdwr/cli
 $ cdwr COMMAND
 running command...
 $ cdwr (--version)
-@cdwr/cli/1.2.3 linux-x64 node-v18.15.0
+@cdwr/cli/1.2.4-rc.1 linux-x64 node-v18.15.0
 $ cdwr --help [COMMAND]
 USAGE
   $ cdwr COMMAND
