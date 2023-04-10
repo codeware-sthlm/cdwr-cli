@@ -1,16 +1,18 @@
-name: Failure notification
-
+name: Slack notify
 on:
   workflow_run:
     workflows:
       - CI
     types:
       - completed
+env:
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DEVOPS_WEBHOOK }}
+  SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
 
 jobs:
-  failure-notify:
-    runs-on: ubuntu-latest
+  failure:
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    runs-on: ubuntu-latest
     steps:
       - name: Slack
         id: slack
@@ -44,6 +46,3 @@ jobs:
                 }
               ]
             }
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DEVOPS_WEBHOOK }}
-          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
