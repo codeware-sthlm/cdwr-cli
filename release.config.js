@@ -42,7 +42,7 @@ module.exports = {
     [
       '@semantic-release/git',
       {
-        assets: ['CHANGELOG.md', 'package.json'],
+        assets: ['CHANGELOG.md', 'package.json', 'README.md'],
         message:
           // Add `[skip ci]` in message to prevent triggering a pipeline
           'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
