@@ -5,7 +5,7 @@
 </div>
 
 ![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/codeware-sthlm/cdwr-cli/release.yml?branch=master)
-[![npm version](https://badge.fury.io/js/@cdwr%2Fcli.svg)](https://www.npmjs.com/@cdwr/cli)
+![npm (scoped)](https://img.shields.io/npm/v/@cdwr/cli)
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)]()
 
 <hr>
@@ -13,10 +13,10 @@
 Table of contents
 
 * [Description](#description)
-* [Features](#features)
-* [Usage](#usage)
+* [Recipes](#recipes)
+* [General Usage](#general-usage)
 * [Commands](#commands)
-* [Development](#development)
+* [CLI Development](#cli-development)
 
 # Description
 
@@ -26,7 +26,7 @@ Though it's a public repo this CLI is aimed for Codeware Sthlm developers. If an
 
 # Recipes
 
-## Setup a local npm registry using verdaccio
+## Setup a local npm registry using [verdaccio](https://verdaccio.org/)
 
 ```sh
 # Start verdaccio
@@ -35,11 +35,11 @@ cdwr registry start
 # Change your local registry setting to use the verdaccio host
 cdwr registry set local
 
-# Check status
+# Check status and get registry info
 cdwr registry status
 ```
 
-Now a deploy to npm via `npm publish` should end up in verdaccio repository.
+Deployment to npm via `npm publish` should end up in verdaccio repository.
 
 The repository content is accessed via <http://localhost:4373>.
 
@@ -47,20 +47,151 @@ The repository content is accessed via <http://localhost:4373>.
 # Stop verdaccio
 cdwr registry stop
 
-# Check status again
+# Verify it's stopped
 cdwr registry status
 ```
 
 # General Usage
 
 <!-- usage -->
-🚀 Do not edit this section, content is auto-generated in the release process
+```sh-session
+$ npm install -g @cdwr/cli
+$ cdwr COMMAND
+running command...
+$ cdwr (--version)
+@cdwr/cli/1.2.3 linux-x64 node-v18.15.0
+$ cdwr --help [COMMAND]
+USAGE
+  $ cdwr COMMAND
+...
+```
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-🚀 Do not edit this section, content is auto-generated in the release process
+* [`cdwr autocomplete [SHELL]`](#cdwr-autocomplete-shell)
+* [`cdwr commands`](#cdwr-commands)
+* [`cdwr help [COMMANDS]`](#cdwr-help-commands)
+* [`cdwr search`](#cdwr-search)
+* [`cdwr version`](#cdwr-version)
+
+## `cdwr autocomplete [SHELL]`
+
+display autocomplete installation instructions
+
+```
+USAGE
+  $ cdwr autocomplete [SHELL] [-r]
+
+ARGUMENTS
+  SHELL  shell type
+
+FLAGS
+  -r, --refresh-cache  Refresh cache (ignores displaying instructions)
+
+DESCRIPTION
+  display autocomplete installation instructions
+
+EXAMPLES
+  $ cdwr autocomplete
+
+  $ cdwr autocomplete bash
+
+  $ cdwr autocomplete zsh
+
+  $ cdwr autocomplete --refresh-cache
+```
+
+_See code: [@oclif/plugin-autocomplete](https://github.com/oclif/plugin-autocomplete/blob/v1.4.6/src/commands/autocomplete/index.ts)_
+
+## `cdwr commands`
+
+list all the commands
+
+```
+USAGE
+  $ cdwr commands [--json] [-h] [--hidden] [--tree] [--columns <value> | -x] [--sort <value>] [--filter
+    <value>] [--output csv|json|yaml |  | [--csv | --no-truncate]] [--no-header | ]
+
+FLAGS
+  -h, --help         Show CLI help.
+  -x, --extended     show extra columns
+  --columns=<value>  only show provided columns (comma-separated)
+  --csv              output is csv format [alias: --output=csv]
+  --filter=<value>   filter property by partial string matching, ex: name=foo
+  --hidden           show hidden commands
+  --no-header        hide table header from output
+  --no-truncate      do not truncate output to fit screen
+  --output=<option>  output in a more machine friendly format
+                     <options: csv|json|yaml>
+  --sort=<value>     property to sort by (prepend '-' for descending)
+  --tree             show tree of commands
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+DESCRIPTION
+  list all the commands
+```
+
+_See code: [@oclif/plugin-commands](https://github.com/oclif/plugin-commands/blob/v2.2.13/src/commands/commands.ts)_
+
+## `cdwr help [COMMANDS]`
+
+Display help for cdwr.
+
+```
+USAGE
+  $ cdwr help [COMMANDS] [-n]
+
+ARGUMENTS
+  COMMANDS  Command to show help for.
+
+FLAGS
+  -n, --nested-commands  Include all nested commands in the output.
+
+DESCRIPTION
+  Display help for cdwr.
+```
+
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.2.9/src/commands/help.ts)_
+
+## `cdwr search`
+
+Search for a command.
+
+```
+USAGE
+  $ cdwr search
+
+DESCRIPTION
+  Search for a command.
+
+  Once you select a command, hit enter and it will show the help for that command.
+```
+
+_See code: [@oclif/plugin-search](https://github.com/oclif/plugin-search/blob/v0.0.11/dist/commands/search.ts)_
+
+## `cdwr version`
+
+```
+USAGE
+  $ cdwr version [--json] [--verbose]
+
+FLAGS
+  --verbose  Show additional information about the CLI.
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+FLAG DESCRIPTIONS
+  --verbose  Show additional information about the CLI.
+
+    Additionally shows the architecture, node version, operating system, and versions of plugins that the CLI is using.
+```
+
+_See code: [@oclif/plugin-version](https://github.com/oclif/plugin-version/blob/v1.3.2/src/commands/version.ts)_
 <!-- commandsstop -->
 
 # CLI Development
@@ -98,9 +229,6 @@ yarn release:local
 ## Commit some changes
 
 ```sh
-# Update README.md
-oclif readme
-
 # Stage files
 git add [FILES]
 

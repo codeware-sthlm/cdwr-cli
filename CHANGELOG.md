@@ -1,3 +1,10 @@
+## [1.2.4-rc.1](https://github.com/codeware-sthlm/cdwr-cli/compare/v1.2.3...v1.2.4-rc.1) (2023-04-10)
+
+
+### Bug Fixes
+
+* **docs:** update anchor links and fix some texts ([76f76f0](https://github.com/codeware-sthlm/cdwr-cli/commit/76f76f0c02cb8ce4206d4a6dd6de9bcd597d5e39))
+
 ## [1.2.3](https://github.com/codeware-sthlm/cdwr-cli/compare/v1.2.2...v1.2.3) (2023-04-09)
 
 
