@@ -5,7 +5,7 @@
 </div>
 
 ![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/codeware-sthlm/cdwr-cli/release.yml?branch=master)
-[![npm version](https://badge.fury.io/js/@cdwr%2Fcli.svg)](https://www.npmjs.com/@cdwr/cli)
+![npm (scoped)](https://img.shields.io/npm/v/@cdwr/cli)
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)]()
 
 <hr>
@@ -13,10 +13,10 @@
 Table of contents
 
 * [Description](#description)
-* [Features](#features)
-* [Usage](#usage)
+* [Recipes](#recipes)
+* [General Usage](#general-usage)
 * [Commands](#commands)
-* [Development](#development)
+* [CLI Development](#cli-development)
 
 # Description
 
@@ -26,7 +26,7 @@ Though it's a public repo this CLI is aimed for Codeware Sthlm developers. If an
 
 # Recipes
 
-## Setup a local npm registry using verdaccio
+## Setup a local npm registry using [verdaccio](https://verdaccio.org/)
 
 ```sh
 # Start verdaccio
@@ -35,11 +35,11 @@ cdwr registry start
 # Change your local registry setting to use the verdaccio host
 cdwr registry set local
 
-# Check status
+# Check status and get registry info
 cdwr registry status
 ```
 
-Now a deploy to npm via `npm publish` should end up in verdaccio repository.
+Deployment to npm via `npm publish` should end up in verdaccio repository.
 
 The repository content is accessed via <http://localhost:4373>.
 
@@ -47,20 +47,18 @@ The repository content is accessed via <http://localhost:4373>.
 # Stop verdaccio
 cdwr registry stop
 
-# Check status again
+# Verify it's stopped
 cdwr registry status
 ```
 
 # General Usage
 
 <!-- usage -->
-🚀 Do not edit this section, content is auto-generated in the release process
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-🚀 Do not edit this section, content is auto-generated in the release process
 <!-- commandsstop -->
 
 # CLI Development
@@ -98,9 +96,6 @@ yarn release:local
 ## Commit some changes
 
 ```sh
-# Update README.md
-oclif readme
-
 # Stage files
 git add [FILES]
 
