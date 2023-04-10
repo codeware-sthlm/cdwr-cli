@@ -3,7 +3,7 @@ name: Failure notification
 on:
   workflow_run:
     workflows:
-      - todo_activate_valid_workflows_when_stable
+      - CI
     types:
       - completed
 
@@ -12,13 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     steps:
-      - name: Announce Failure
+      - name: Slack
         id: slack
-        uses: slackapi/slack-github-action@v1.21.0
-        env:
-          # for non-CLI-team-owned plugins, you can send this anywhere you like
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+        uses: slackapi/slack-github-action@v1.23.0
         with:
           payload: |
             {
@@ -28,15 +24,26 @@ jobs:
                   "type": "header",
                   "text": {
                     "type": "plain_text",
-                    "text": ":bh-alert: ${{ github.event.workflow_run.name }} failed: ${{ github.event.workflow_run.repository.name }} :bh-alert:"
+                    "text": ":no_entry: ${{ github.event.workflow_run.name }} failed"
                   }
-                },
+                }
+              ],
+              "attachments": [
                 {
-                  "type": "section",
-                  "text": {
-                    "type": "mrkdwn",
-                    "text": "Repo: ${{ github.event.workflow_run.repository.html_url }}\nWorkflow name: `${{ github.event.workflow_run.name }}`\nJob url: ${{ github.event.workflow_run.html_url }}"
-                  }
+                  "color": "danger",
+                  "blocks": [
+                    {
+                      "type": "section",
+                      "text": {
+                        "type": "mrkdwn",
+                        "text": "Repo: ${{ github.event.workflow_run.repository.html_url }}\nWorkflow name: `${{ github.event.workflow_run.name }}`\nJob url: ${{ github.event.workflow_run.html_url }}"
+                      }
+                    }
+
+                  ]
                 }
               ]
             }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DEVOPS_WEBHOOK }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
