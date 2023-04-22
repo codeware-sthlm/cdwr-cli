@@ -811,10 +811,10 @@
     supports-color "^8.1.1"
     tslib "^2"
 
-"@oclif/core@^2", "@oclif/core@^2.0.3", "@oclif/core@^2.1.2", "@oclif/core@^2.7.1", "@oclif/core@^2.8.0":
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.8.0.tgz#4948de3168804169fa68895af8ec4853f332b307"
-  integrity sha512-A2wHItFrD/WOw5bJ6Mtv9MD7If0bsKNR0pwEY0me+fo4HSXlJOtgYGqmzb8t8akX3DUUT7XsjPajsoHLkIJyvg==
+"@oclif/core@^2", "@oclif/core@^2.1.2", "@oclif/core@^2.7.1", "@oclif/core@^2.8.0", "@oclif/core@^2.8.2":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.8.2.tgz#86fc31f20419dbb3cd25f89f4f1d83760c60f7c0"
+  integrity sha512-g50NrCdEcFlBfuwZb9RxLmxPNQ9wIaBPOiwbxlGYRkHMnsC6LNHcvVtyDnmndU8qoXrmCOZ6ocSZenOMlG+G1w==
   dependencies:
     "@types/cli-progress" "^3.11.0"
     ansi-escapes "^4.3.2"
@@ -881,12 +881,12 @@
     fast-levenshtein "^3.0.0"
     lodash "^4.17.21"
 
-"@oclif/plugin-search@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-search/-/plugin-search-0.0.11.tgz#43f756798d44e6d57419db2950855db3c3b66bf9"
-  integrity sha512-zOiLLfg5/Jt7g8J+txFm4tjHl2jRKgj7KyX4rQsS+UjvySs4V0qtt1CPAvaAZrbjFDCzzRwVXaaDFdQyiWWL1A==
+"@oclif/plugin-search@^0.0.16":
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-search/-/plugin-search-0.0.16.tgz#761c7e55e9ee2ff85ac189339e4590ad7305d11f"
+  integrity sha512-uUo26QeR3/2u+yOAkdKnAT0EXku3fNodehgMSMIejB/w1GYn77KteKzF4GTuTn9k+Mttfn2AVssx7VAkdpyBqw==
   dependencies:
-    "@oclif/core" "^2.0.3"
+    "@oclif/core" "^2.8.2"
     chalk "^4"
     fuse.js "^6.6.2"
     inquirer "^8.2.5"

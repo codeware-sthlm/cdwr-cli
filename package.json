@@ -13,7 +13,7 @@
     "@oclif/plugin-commands": "^2.2.5",
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-not-found": "^2.3.17",
-    "@oclif/plugin-search": "^0.0.11",
+    "@oclif/plugin-search": "^0.0.16",
     "@oclif/plugin-version": "^1.2.1",
     "@oclif/plugin-warn-if-update-available": "^2.0.24",
     "inquirer": "^8.2.3",
