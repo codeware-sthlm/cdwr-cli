@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/codeware-sthlm/cdwr-cli/compare/v1.2.4...v1.2.5) (2023-04-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @oclif/plugin-commands to v2.2.14 ([8eb7e75](https://github.com/codeware-sthlm/cdwr-cli/commit/8eb7e75cd2e79e13b760881481134e3537d65bb4))
+
 ## [1.2.4](https://github.com/codeware-sthlm/cdwr-cli/compare/v1.2.3...v1.2.4) (2023-04-10)
 
 
