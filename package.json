@@ -1,7 +1,7 @@
 {
   "name": "@cdwr/cli",
   "description": "Codeware Sthlm Developer CLI",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "author": "Codeware Sthlm",
   "bin": {
     "cdwr": "./bin/run"

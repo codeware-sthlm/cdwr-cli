@@ -59,7 +59,7 @@ $ npm install -g @cdwr/cli
 $ cdwr COMMAND
 running command...
 $ cdwr (--version)
-@cdwr/cli/1.2.4 linux-x64 node-v18.16.0
+@cdwr/cli/1.2.5 linux-x64 node-v18.16.0
 $ cdwr --help [COMMAND]
 USAGE
   $ cdwr COMMAND
@@ -171,7 +171,7 @@ DESCRIPTION
   Once you select a command, hit enter and it will show the help for that command.
 ```
 
-_See code: [@oclif/plugin-search](https://github.com/oclif/plugin-search/blob/v0.0.11/dist/commands/search.ts)_
+_See code: [@oclif/plugin-search](https://github.com/oclif/plugin-search/blob/v0.0.16/dist/commands/search.ts)_
 
 ## `cdwr version`
 

@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/codeware-sthlm/cdwr-cli/compare/v1.2.5...v1.2.6) (2023-04-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @oclif/plugin-search to ^0.0.16 ([22a96db](https://github.com/codeware-sthlm/cdwr-cli/commit/22a96dbadfdbebe3fe5095018f27657123c1698d))
+
 ## [1.2.5](https://github.com/codeware-sthlm/cdwr-cli/compare/v1.2.4...v1.2.5) (2023-04-25)
 
 
