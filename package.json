@@ -17,7 +17,7 @@
     "@oclif/plugin-version": "^1.2.1",
     "@oclif/plugin-warn-if-update-available": "^2.0.24",
     "inquirer": "^8.2.3",
-    "ps-list": "^7.0.0",
+    "ps-list": "^8.0.0",
     "verdaccio": "^5.20.1"
   },
   "devDependencies": {
