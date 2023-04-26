@@ -16,7 +16,7 @@
     "@oclif/plugin-search": "^0.0.16",
     "@oclif/plugin-version": "^1.2.1",
     "@oclif/plugin-warn-if-update-available": "^2.0.24",
-    "inquirer": "^8.2.3",
+    "inquirer": "^9.0.0",
     "ps-list": "^7.0.0",
     "verdaccio": "^5.20.1"
   },
@@ -28,7 +28,7 @@
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/chai": "^4",
-    "@types/inquirer": "^8.2.3",
+    "@types/inquirer": "^9.0.0",
     "@types/listr": "^0.14.4",
     "@types/mocha": "^10.0.0",
     "@types/node": "^18.0.0",
