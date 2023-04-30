@@ -21,6 +21,7 @@
     "import/no-unresolved": "error",
     "indent": ["error", 2, { "MemberExpression": 1 }],
     "node/no-missing-import": "off",
+    "no-redeclare": "off", // allow function overload
     "object-curly-spacing": ["error", "always"],
     "operator-linebreak": [
       "error",

@@ -1,6 +1,10 @@
 {
-  "require": ["test/helpers/init.js", "ts-node/register"],
-  "watch-extensions": ["ts"],
+  "node-option": [
+    "experimental-specifier-resolution=node",
+    "loader=tsx",
+    "no-warnings"
+  ],
+  "spec": ["test/**/*.test.ts"],
   "recursive": true,
   "reporter": "spec",
   "timeout": 60000

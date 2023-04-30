@@ -1,19 +1,8 @@
-/**
- * ESM compatibility workaround.
- *
- * The library developer have converted all functions to ESM.
- * @link https://github.com/sindresorhus
- *
- * Oclif does not natively support ESM, hence we need to use
- * older library versions. Since those versions use default exports
- * we have to add `esModuleInterop: true` to our tsconfig file.
- */
-
 import { isRegExp } from 'node:util/types';
 
 import pslist from 'ps-list';
 
-import { isNumber } from '@cdwr/libs/utils';
+import { isNumber } from './is-number.js';
 
 // Extract process type from the inferred return type
 export type Process = ReturnType<typeof pslist> extends Promise<(infer U)[]>

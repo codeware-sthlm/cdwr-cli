@@ -3,21 +3,22 @@
   "description": "Codeware Sthlm Developer CLI",
   "version": "1.2.6",
   "author": "Codeware Sthlm",
+  "type": "module",
   "bin": {
-    "cdwr": "./bin/run"
+    "cdwr": "./bin/run.js"
   },
   "bugs": "https://github.com/codeware-sthlm/cdwr-cli/issues",
   "dependencies": {
     "@oclif/core": "^2",
-    "@oclif/plugin-autocomplete": "^1.4.3",
+    "@oclif/plugin-autocomplete": "^2.1.9",
     "@oclif/plugin-commands": "^2.2.5",
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-not-found": "^2.3.17",
     "@oclif/plugin-search": "^0.0.16",
     "@oclif/plugin-version": "^1.2.1",
     "@oclif/plugin-warn-if-update-available": "^2.0.24",
-    "inquirer": "^8.2.3",
-    "ps-list": "^7.0.0",
+    "inquirer": "^9.2.0",
+    "ps-list": "^8.1.1",
     "verdaccio": "^5.20.1"
   },
   "devDependencies": {
@@ -28,7 +29,7 @@
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/chai": "^4",
-    "@types/inquirer": "^8.2.3",
+    "@types/inquirer": "^9.0.3",
     "@types/listr": "^0.14.4",
     "@types/mocha": "^10.0.0",
     "@types/node": "^18.0.0",
@@ -40,23 +41,23 @@
     "eslint-config-oclif-typescript": "^1.0.3",
     "eslint-import-resolver-typescript": "^3.5.4",
     "eslint-plugin-import": "^2.27.5",
-    "execa": "^5.1.1",
+    "execa": "^7.1.1",
     "husky": "^8.0.3",
     "is-ci": "^3.0.1",
     "jsonc-eslint-parser": "^2.2.0",
     "lint-staged": "^13.1.1",
     "listr": "^0.14.3",
     "mocha": "^10.0.0",
+    "npm-run-all": "^4.1.5",
     "oclif": "^3",
     "prettier": "^2.8.4",
     "rxjs": "^7.8.0",
     "semantic-release": "^21.0.1",
     "semantic-release-slack-bot": "^4.0.1",
     "shx": "^0.3.3",
-    "ts-node": "^10.9.1",
     "tsc-alias": "^1.8.5",
-    "tsconfig-paths": "^4.2.0",
     "tslib": "^2.5.0",
+    "tsx": "^3.12.6",
     "typescript": "^5.0.0"
   },
   "engines": {
@@ -93,6 +94,9 @@
       "registry": {
         "description": "Manage registry location"
       }
+    },
+    "warn-if-update-available": {
+      "timeoutInDays": 1
     }
   },
   "private": false,
@@ -105,13 +109,16 @@
     "c": "czg",
     "cai": "czg ai",
     "commit": "czg",
-    "build": "shx rm -rf dist && tsc -b && tsc-alias",
+    "build": "run-s build:**",
+    "build:clean": "shx rm -rf dist",
+    "build:pre": "tsc -b",
+    "build:post": "tsc-alias",
     "lint": "eslint . --ext .ts --config .eslintrc",
     "postpack": "shx rm -f oclif.manifest.json",
-    "posttest": "yarn lint",
     "prepack": "yarn build && oclif manifest && oclif readme",
     "release:local": "oclif pack tarballs",
-    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "test": "mocha",
+    "test:watch": "mocha --watch --parallel",
     "prepare": "is-ci || husky install"
   },
   "types": "dist/index.d.ts",

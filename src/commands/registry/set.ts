@@ -1,5 +1,5 @@
 import { Args, Command, ux } from '@oclif/core';
-import * as inquirer from 'inquirer';
+import inquirer from 'inquirer';
 
 import { LOCATION_OPTIONS, REGISTRIES } from '@cdwr/libs/definitions';
 import { exec } from '@cdwr/libs/utils';

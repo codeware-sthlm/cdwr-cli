@@ -4,7 +4,7 @@ import { appendFileSync, existsSync, mkdirSync, openSync } from 'node:fs';
 import { Command, Flags, ux } from '@oclif/core';
 
 import { VERDACCIO } from '@cdwr/libs/definitions';
-import { findProcess } from '@cdwr/libs/node-sindre';
+import { findProcess } from '@cdwr/libs/utils';
 
 export default class RegistryStart extends Command {
   static description = 'Start local verdaccio registry';

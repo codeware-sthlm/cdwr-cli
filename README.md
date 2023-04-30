@@ -196,6 +196,14 @@ _See code: [@oclif/plugin-version](https://github.com/oclif/plugin-version/blob/
 
 # CLI Development
 
+## Prerequisites
+
+`tsx` must be globally installed to be able to start CLI in development mode.
+
+```sh
+npm i -g tsx
+```
+
 ## Setup
 
 ```sh
@@ -206,17 +214,31 @@ yarn
 
 ## Start
 
-```sh
-# dev mode
-bin/dev [COMMAND]
+Launch development mode
 
-# prod mode
-bin/run [COMMAND]
-```
-  
 ```sh
-yarn build 
+bin/dev.js [COMMAND]
+```
+
+Launch production build
+
+```sh
+yarn build
+```
+
+```sh
+bin/run.js [COMMAND]
+```
+
+Linting
+
+```sh
 yarn lint
+```
+
+Unit tests
+
+```sh
 yarn test
 ```
 

@@ -6,8 +6,7 @@ import {
   REGISTRIES,
   VERDACCIO
 } from '@cdwr/libs/definitions';
-import { findProcess } from '@cdwr/libs/node-sindre';
-import { exec } from '@cdwr/libs/utils';
+import { exec, findProcess } from '@cdwr/libs/utils';
 
 type Table = {
   key: string;
