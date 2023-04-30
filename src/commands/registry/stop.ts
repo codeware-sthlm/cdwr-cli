@@ -2,8 +2,7 @@ import { Command } from '@oclif/core';
 import Listr from 'listr';
 
 import { VERDACCIO } from '@cdwr/libs/definitions';
-import { Process, findProcess } from '@cdwr/libs/node-sindre';
-import { exec } from '@cdwr/libs/utils';
+import { type Process, exec, findProcess } from '@cdwr/libs/utils';
 
 export default class RegistryStop extends Command {
   static description = 'Stop local verdaccio registry';

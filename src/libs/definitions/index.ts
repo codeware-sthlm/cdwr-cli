@@ -3,4 +3,4 @@ export {
   LOCATION_OPTIONS,
   REGISTRIES,
   VERDACCIO
-} from './constants';
+} from './src/constants.js';
