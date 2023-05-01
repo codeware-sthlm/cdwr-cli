@@ -1,3 +1,10 @@
+# [1.3.0-rc.1](https://github.com/codeware-sthlm/cdwr-cli/compare/v1.2.6...v1.3.0-rc.1) (2023-05-01)
+
+
+### Features
+
+* convert to ESM module system ([14891d3](https://github.com/codeware-sthlm/cdwr-cli/commit/14891d3880f8191bfb36e36e9444f27cc81f709c))
+
 ## [1.2.6](https://github.com/codeware-sthlm/cdwr-cli/compare/v1.2.5...v1.2.6) (2023-04-25)
 
 
