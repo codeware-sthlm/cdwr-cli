@@ -59,7 +59,7 @@ $ npm install -g @cdwr/cli
 $ cdwr COMMAND
 running command...
 $ cdwr (--version)
-@cdwr/cli/1.2.5 linux-x64 node-v18.16.0
+@cdwr/cli/1.2.6 linux-x64 node-v18.16.0
 $ cdwr --help [COMMAND]
 USAGE
   $ cdwr COMMAND
@@ -103,7 +103,7 @@ EXAMPLES
   $ cdwr autocomplete --refresh-cache
 ```
 
-_See code: [@oclif/plugin-autocomplete](https://github.com/oclif/plugin-autocomplete/blob/v1.4.6/src/commands/autocomplete/index.ts)_
+_See code: [@oclif/plugin-autocomplete](https://github.com/oclif/plugin-autocomplete/blob/v2.1.9/src/commands/autocomplete/index.ts)_
 
 ## `cdwr commands`
 
@@ -191,7 +191,7 @@ FLAG DESCRIPTIONS
     Additionally shows the architecture, node version, operating system, and versions of plugins that the CLI is using.
 ```
 
-_See code: [@oclif/plugin-version](https://github.com/oclif/plugin-version/blob/v1.3.2/src/commands/version.ts)_
+_See code: [@oclif/plugin-version](https://github.com/oclif/plugin-version/blob/v1.3.3/src/commands/version.ts)_
 <!-- commandsstop -->
 
 # CLI Development
