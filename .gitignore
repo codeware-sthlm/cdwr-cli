@@ -8,3 +8,12 @@
 node_modules
 oclif.manifest.json
 tsconfig.tsbuildinfo
+
+# Yarn 3 not using Zero install
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
