@@ -285,7 +285,7 @@ __metadata:
     "@oclif/plugin-commands": ^2.2.5
     "@oclif/plugin-help": ^5
     "@oclif/plugin-not-found": ^2.3.17
-    "@oclif/plugin-search": ^0.0.16
+    "@oclif/plugin-search": ^0.0.23
     "@oclif/plugin-version": ^1.2.1
     "@oclif/plugin-warn-if-update-available": ^2.0.24
     "@oclif/test": ^2.3.17
@@ -1289,6 +1289,42 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@oclif/core@npm:^2.9.3":
+  version: 2.15.0
+  resolution: "@oclif/core@npm:2.15.0"
+  dependencies:
+    "@types/cli-progress": ^3.11.0
+    ansi-escapes: ^4.3.2
+    ansi-styles: ^4.3.0
+    cardinal: ^2.1.1
+    chalk: ^4.1.2
+    clean-stack: ^3.0.1
+    cli-progress: ^3.12.0
+    debug: ^4.3.4
+    ejs: ^3.1.8
+    get-package-type: ^0.1.0
+    globby: ^11.1.0
+    hyperlinker: ^1.0.0
+    indent-string: ^4.0.0
+    is-wsl: ^2.2.0
+    js-yaml: ^3.14.1
+    natural-orderby: ^2.0.3
+    object-treeify: ^1.1.33
+    password-prompt: ^1.1.2
+    slice-ansi: ^4.0.0
+    string-width: ^4.2.3
+    strip-ansi: ^6.0.1
+    supports-color: ^8.1.1
+    supports-hyperlinks: ^2.2.0
+    ts-node: ^10.9.1
+    tslib: ^2.5.0
+    widest-line: ^3.1.0
+    wordwrap: ^1.0.0
+    wrap-ansi: ^7.0.0
+  checksum: a4ef8ad00d9bc7cb48e5847bad7def6947f913875f4b0ecec65ab423a3c2a82c87df173c709c3c25396d545f60d20d17d562c474f66230d76de43061ce22ba90
+  languageName: node
+  linkType: hard
+
 "@oclif/plugin-autocomplete@npm:^2.1.9":
   version: 2.1.9
   resolution: "@oclif/plugin-autocomplete@npm:2.1.9"
@@ -1332,16 +1368,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oclif/plugin-search@npm:^0.0.16":
-  version: 0.0.16
-  resolution: "@oclif/plugin-search@npm:0.0.16"
+"@oclif/plugin-search@npm:^0.0.23":
+  version: 0.0.23
+  resolution: "@oclif/plugin-search@npm:0.0.23"
   dependencies:
-    "@oclif/core": ^2.8.2
+    "@oclif/core": ^2.9.3
     chalk: ^4
     fuse.js: ^6.6.2
-    inquirer: ^8.2.5
-    rxjs: ^7.8.0
-  checksum: c3e450946f57718b939eb2335396c04e02d723833fa53013954adf4963b13f44d1f374457c112bdab544acdde1857bb9ba1a7c0b5231287ed0fe50ad693b30c5
+    inquirer: ^8.2.6
+    rxjs: ^7.8.1
+  checksum: 3ea03c1f67f0ee5fffcc6db77837b80d3427d9538310dfbfc64be7278c3eb1250ca8fbb4b35971aa2c73b14d2c2f2ab9205ef6664493da3286d4abce37793ba3
   languageName: node
   linkType: hard
 
@@ -6766,7 +6802,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:^8.0.0, inquirer@npm:^8.2.5":
+"inquirer@npm:^8.0.0":
   version: 8.2.5
   resolution: "inquirer@npm:8.2.5"
   dependencies:
@@ -6786,6 +6822,29 @@ __metadata:
     through: ^2.3.6
     wrap-ansi: ^7.0.0
   checksum: f13ee4c444187786fb393609dedf6b30870115a57b603f2e6424f29a99abc13446fd45ee22461c33c9c40a92a60a8df62d0d6b25d74fc6676fa4cb211de55b55
+  languageName: node
+  linkType: hard
+
+"inquirer@npm:^8.2.6":
+  version: 8.2.6
+  resolution: "inquirer@npm:8.2.6"
+  dependencies:
+    ansi-escapes: ^4.2.1
+    chalk: ^4.1.1
+    cli-cursor: ^3.1.0
+    cli-width: ^3.0.0
+    external-editor: ^3.0.3
+    figures: ^3.0.0
+    lodash: ^4.17.21
+    mute-stream: 0.0.8
+    ora: ^5.4.1
+    run-async: ^2.4.0
+    rxjs: ^7.5.5
+    string-width: ^4.1.0
+    strip-ansi: ^6.0.0
+    through: ^2.3.6
+    wrap-ansi: ^6.0.1
+  checksum: 387ffb0a513559cc7414eb42c57556a60e302f820d6960e89d376d092e257a919961cd485a1b4de693dbb5c0de8bc58320bfd6247dfd827a873aa82a4215a240
   languageName: node
   linkType: hard
 
@@ -11370,7 +11429,7 @@ node-fetch@cjs:
   languageName: node
   linkType: hard
 
-"rxjs@npm:^7.0.0, rxjs@npm:^7.2.0, rxjs@npm:^7.5.5, rxjs@npm:^7.8.0":
+"rxjs@npm:^7.0.0, rxjs@npm:^7.2.0, rxjs@npm:^7.5.5, rxjs@npm:^7.8.0, rxjs@npm:^7.8.1":
   version: 7.8.1
   resolution: "rxjs@npm:7.8.1"
   dependencies:
@@ -13494,7 +13553,7 @@ node-fetch@cjs:
   languageName: node
   linkType: hard
 
-"wrap-ansi@npm:^6.2.0":
+"wrap-ansi@npm:^6.0.1, wrap-ansi@npm:^6.2.0":
   version: 6.2.0
   resolution: "wrap-ansi@npm:6.2.0"
   dependencies:
