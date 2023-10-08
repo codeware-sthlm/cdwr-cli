@@ -1289,6 +1289,42 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@oclif/core@npm:^2.11.4, @oclif/core@npm:^2.15.0":
+  version: 2.15.0
+  resolution: "@oclif/core@npm:2.15.0"
+  dependencies:
+    "@types/cli-progress": ^3.11.0
+    ansi-escapes: ^4.3.2
+    ansi-styles: ^4.3.0
+    cardinal: ^2.1.1
+    chalk: ^4.1.2
+    clean-stack: ^3.0.1
+    cli-progress: ^3.12.0
+    debug: ^4.3.4
+    ejs: ^3.1.8
+    get-package-type: ^0.1.0
+    globby: ^11.1.0
+    hyperlinker: ^1.0.0
+    indent-string: ^4.0.0
+    is-wsl: ^2.2.0
+    js-yaml: ^3.14.1
+    natural-orderby: ^2.0.3
+    object-treeify: ^1.1.33
+    password-prompt: ^1.1.2
+    slice-ansi: ^4.0.0
+    string-width: ^4.2.3
+    strip-ansi: ^6.0.1
+    supports-color: ^8.1.1
+    supports-hyperlinks: ^2.2.0
+    ts-node: ^10.9.1
+    tslib: ^2.5.0
+    widest-line: ^3.1.0
+    wordwrap: ^1.0.0
+    wrap-ansi: ^7.0.0
+  checksum: a4ef8ad00d9bc7cb48e5847bad7def6947f913875f4b0ecec65ab423a3c2a82c87df173c709c3c25396d545f60d20d17d562c474f66230d76de43061ce22ba90
+  languageName: node
+  linkType: hard
+
 "@oclif/plugin-autocomplete@npm:^2.1.9":
   version: 2.1.9
   resolution: "@oclif/plugin-autocomplete@npm:2.1.9"
@@ -1311,7 +1347,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oclif/plugin-help@npm:^5, @oclif/plugin-help@npm:^5.1.19":
+"@oclif/plugin-help@npm:^5":
   version: 5.2.9
   resolution: "@oclif/plugin-help@npm:5.2.9"
   dependencies:
@@ -1320,7 +1356,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oclif/plugin-not-found@npm:^2.3.17, @oclif/plugin-not-found@npm:^2.3.7":
+"@oclif/plugin-help@npm:^5.2.14":
+  version: 5.2.20
+  resolution: "@oclif/plugin-help@npm:5.2.20"
+  dependencies:
+    "@oclif/core": ^2.15.0
+  checksum: 4e98e9b81f26d63dea15c82a367ee60b36f3b62261015282090b90b94dec9a53cd4a856c7b10767bba5a7d2582c1ffb2b72ec00bd62ec35f9359bcdc87dcd674
+  languageName: node
+  linkType: hard
+
+"@oclif/plugin-not-found@npm:^2.3.17":
   version: 2.3.23
   resolution: "@oclif/plugin-not-found@npm:2.3.23"
   dependencies:
@@ -1329,6 +1374,17 @@ __metadata:
     fast-levenshtein: ^3.0.0
     lodash: ^4.17.21
   checksum: 17d70f5b7d6bfd36609c4b735e21556fa0bbe6498538ac69370b19ea8ea9d349b578d72e00dfd40a36d04f0bd288c7e59275e6b9f08c024fc18275cab0eed706
+  languageName: node
+  linkType: hard
+
+"@oclif/plugin-not-found@npm:^2.3.32":
+  version: 2.4.3
+  resolution: "@oclif/plugin-not-found@npm:2.4.3"
+  dependencies:
+    "@oclif/core": ^2.15.0
+    chalk: ^4
+    fast-levenshtein: ^3.0.0
+  checksum: a7452e4d4b868411856dd3a195609af0757a8a171fbcc17f4311d8b04764e37f4c6d32dd1d9078b166452836e5fa7c42996ffb444016e466f92092c46a2606fb
   languageName: node
   linkType: hard
 
@@ -1354,7 +1410,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oclif/plugin-warn-if-update-available@npm:^2.0.14, @oclif/plugin-warn-if-update-available@npm:^2.0.24":
+"@oclif/plugin-warn-if-update-available@npm:^2.0.24":
   version: 2.0.36
   resolution: "@oclif/plugin-warn-if-update-available@npm:2.0.36"
   dependencies:
@@ -1366,6 +1422,20 @@ __metadata:
     lodash: ^4.17.21
     semver: ^7.5.0
   checksum: 6a5076801a04ac11a3d3899abcf4240a253c34e1da84c483e88cd12003a884e5e05d87676ce40b15ded6951525cc3ee64f9276c80db722648c1f7d4949a90436
+  languageName: node
+  linkType: hard
+
+"@oclif/plugin-warn-if-update-available@npm:^2.0.44":
+  version: 2.1.1
+  resolution: "@oclif/plugin-warn-if-update-available@npm:2.1.1"
+  dependencies:
+    "@oclif/core": ^2.15.0
+    chalk: ^4.1.0
+    debug: ^4.1.0
+    http-call: ^5.2.2
+    lodash.template: ^4.5.0
+    semver: ^7.5.4
+  checksum: 4ad8de9309a446fabbc8bea5f46854acfeb127ef80292e526bfd597a9e8e289a621ee7d27be180c49a93270c90999e7a946ba4161eb996e1627a51cb22a6ff69
   languageName: node
   linkType: hard
 
@@ -2651,7 +2721,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansi-styles@npm:^3.0.0, ansi-styles@npm:^3.2.1":
+"ansi-styles@npm:^3.2.1":
   version: 3.2.1
   resolution: "ansi-styles@npm:3.2.1"
   dependencies:
@@ -2904,6 +2974,15 @@ __metadata:
   version: 2.0.0
   resolution: "astral-regex@npm:2.0.0"
   checksum: 876231688c66400473ba505731df37ea436e574dd524520294cc3bbc54ea40334865e01fa0d074d74d036ee874ee7e62f486ea38bc421ee8e6a871c06f011766
+  languageName: node
+  linkType: hard
+
+"async-retry@npm:^1.3.3":
+  version: 1.3.3
+  resolution: "async-retry@npm:1.3.3"
+  dependencies:
+    retry: 0.13.1
+  checksum: 38a7152ff7265a9321ea214b9c69e8224ab1febbdec98efbbde6e562f17ff68405569b796b1c5271f354aef8783665d29953f051f68c1fc45306e61aec82fdc4
   languageName: node
   linkType: hard
 
@@ -3592,13 +3671,6 @@ __metadata:
   dependencies:
     escape-string-regexp: 5.0.0
   checksum: 373f656a31face5c615c0839213b9b542a0a48057abfb1df66900eab4dc2a5c6097628e4a0b5aa559cdfc4e66f8a14ea47be9681773165a44470ef5fb8ccc172
-  languageName: node
-  linkType: hard
-
-"cli-boxes@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "cli-boxes@npm:1.0.0"
-  checksum: 101cfd6464a418a76523c332665eaf0641522f30ecc2492de48263ada6b0852333b2ed47b2998ddda621e7008471c51f597f813be798db237c33ba45b27e802a
   languageName: node
   linkType: hard
 
@@ -5989,13 +6061,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-stdin@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "get-stdin@npm:4.0.1"
-  checksum: 4f73d3fe0516bc1f3dc7764466a68ad7c2ba809397a02f56c2a598120e028430fcff137a648a01876b2adfb486b4bc164119f98f1f7d7c0abd63385bdaa0113f
-  languageName: node
-  linkType: hard
-
 "get-stream@npm:^5.1.0":
   version: 5.2.0
   resolution: "get-stream@npm:5.2.0"
@@ -8012,6 +8077,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash._reinterpolate@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "lodash._reinterpolate@npm:3.0.0"
+  checksum: 06d2d5f33169604fa5e9f27b6067ed9fb85d51a84202a656901e5ffb63b426781a601508466f039c720af111b0c685d12f1a5c14ff8df5d5f27e491e562784b2
+  languageName: node
+  linkType: hard
+
 "lodash.camelcase@npm:^4.3.0":
   version: 4.3.0
   resolution: "lodash.camelcase@npm:4.3.0"
@@ -8093,6 +8165,25 @@ __metadata:
   version: 4.4.0
   resolution: "lodash.startcase@npm:4.4.0"
   checksum: c03a4a784aca653845fe09d0ef67c902b6e49288dc45f542a4ab345a9c406a6dc194c774423fa313ee7b06283950301c1221dd2a1d8ecb2dac8dfbb9ed5606b5
+  languageName: node
+  linkType: hard
+
+"lodash.template@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "lodash.template@npm:4.5.0"
+  dependencies:
+    lodash._reinterpolate: ^3.0.0
+    lodash.templatesettings: ^4.0.0
+  checksum: ca64e5f07b6646c9d3dbc0fe3aaa995cb227c4918abd1cef7a9024cd9c924f2fa389a0ec4296aa6634667e029bc81d4bbdb8efbfde11df76d66085e6c529b450
+  languageName: node
+  linkType: hard
+
+"lodash.templatesettings@npm:^4.0.0":
+  version: 4.2.0
+  resolution: "lodash.templatesettings@npm:4.2.0"
+  dependencies:
+    lodash._reinterpolate: ^3.0.0
+  checksum: 863e025478b092997e11a04e9d9e735875eeff1ffcd6c61742aa8272e3c2cddc89ce795eb9726c4e74cef5991f722897ff37df7738a125895f23fc7d12a7bb59
   languageName: node
   linkType: hard
 
@@ -8830,7 +8921,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:^1.1.0, minimist@npm:^1.2.0, minimist@npm:^1.2.3, minimist@npm:^1.2.5, minimist@npm:^1.2.6":
+"minimist@npm:^1.2.0, minimist@npm:^1.2.3, minimist@npm:^1.2.5, minimist@npm:^1.2.6":
   version: 1.2.8
   resolution: "minimist@npm:1.2.8"
   checksum: 75a6d645fb122dad29c06a7597bddea977258957ed88d7a6df59b5cd3fe4a527e253e9bbf2e783e4b73657f9098b96a5fe96ab8a113655d4109108577ecf85b0
@@ -9764,13 +9855,14 @@ node-fetch@cjs:
   linkType: hard
 
 "oclif@npm:^3":
-  version: 3.8.2
-  resolution: "oclif@npm:3.8.2"
+  version: 3.17.2
+  resolution: "oclif@npm:3.17.2"
   dependencies:
-    "@oclif/core": ^2.8.0
-    "@oclif/plugin-help": ^5.1.19
-    "@oclif/plugin-not-found": ^2.3.7
-    "@oclif/plugin-warn-if-update-available": ^2.0.14
+    "@oclif/core": ^2.11.4
+    "@oclif/plugin-help": ^5.2.14
+    "@oclif/plugin-not-found": ^2.3.32
+    "@oclif/plugin-warn-if-update-available": ^2.0.44
+    async-retry: ^1.3.3
     aws-sdk: ^2.1231.0
     concurrently: ^7.6.0
     debug: ^4.3.3
@@ -9785,11 +9877,9 @@ node-fetch@cjs:
     tslib: ^2.3.1
     yeoman-environment: ^3.15.1
     yeoman-generator: ^5.8.0
-    yosay: ^2.0.2
   bin:
     oclif: bin/run
-    oclif2: bin/run
-  checksum: da6359a2b124c4b3045f9569a9452e177bb3f9908f4be8f4caac48e54abcc54a0ab05bd1752898b7ff0566ec70376530f53fe95b02948e9cfb800bceeec11f48
+  checksum: 3da58e84fc8127893ad1b5b60d72bf4c9cbed5b78748d3d68c8a7ead4c8da5a548507d7c1bdb1a10a041f2938018ef15fdbf683629f8637fadf499b99f05a555
   languageName: node
   linkType: hard
 
@@ -10164,13 +10254,6 @@ node-fetch@cjs:
   bin:
     pacote: lib/bin.js
   checksum: de03c08e2e04b812953d64e50f5b22e56c826487e8b8b35bb79368681ebe865e92cd5ca189339c75fb133c8fb25a3e1518c8eb19a864f1c6b1a8d42bce99e54e
-  languageName: node
-  linkType: hard
-
-"pad-component@npm:0.0.1":
-  version: 0.0.1
-  resolution: "pad-component@npm:0.0.1"
-  checksum: 2d92ad68b6c86ce2afcc75c9536401ef8b25a03f9b1330fbe5a9a9862a5cbb0e4088848d427919f4cb7526c333b7eada7cb590328e69775257e20363023bb424
   languageName: node
   linkType: hard
 
@@ -11295,17 +11378,17 @@ node-fetch@cjs:
   languageName: node
   linkType: hard
 
+"retry@npm:0.13.1, retry@npm:^0.13.1":
+  version: 0.13.1
+  resolution: "retry@npm:0.13.1"
+  checksum: 47c4d5be674f7c13eee4cfe927345023972197dbbdfba5d3af7e461d13b44de1bfd663bfc80d2f601f8ef3fc8164c16dd99655a221921954a65d044a2fc1233b
+  languageName: node
+  linkType: hard
+
 "retry@npm:^0.12.0":
   version: 0.12.0
   resolution: "retry@npm:0.12.0"
   checksum: 623bd7d2e5119467ba66202d733ec3c2e2e26568074923bc0585b6b99db14f357e79bdedb63cab56cec47491c4a0da7e6021a7465ca6dc4f481d3898fdd3158c
-  languageName: node
-  linkType: hard
-
-"retry@npm:^0.13.1":
-  version: 0.13.1
-  resolution: "retry@npm:0.13.1"
-  checksum: 47c4d5be674f7c13eee4cfe927345023972197dbbdfba5d3af7e461d13b44de1bfd663bfc80d2f601f8ef3fc8164c16dd99655a221921954a65d044a2fc1233b
   languageName: node
   linkType: hard
 
@@ -11553,6 +11636,17 @@ node-fetch@cjs:
   bin:
     semver: ./bin/semver.js
   checksum: 1b26ecf6db9e8292dd90df4e781d91875c0dcc1b1909e70f5d12959a23c7eebb8f01ea581c00783bbee72ceeaad9505797c381756326073850dc36ed284b21b9
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.5.4":
+  version: 7.5.4
+  resolution: "semver@npm:7.5.4"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: 12d8ad952fa353b0995bf180cdac205a4068b759a140e5d3c608317098b3575ac2f1e09182206bf2eb26120e1c0ed8fb92c48c592f6099680de56bb071423ca3
   languageName: node
   linkType: hard
 
@@ -12101,7 +12195,7 @@ node-fetch@cjs:
   languageName: node
   linkType: hard
 
-"string-width@npm:^2.0.0, string-width@npm:^2.1.1":
+"string-width@npm:^2.1.1":
   version: 2.1.1
   resolution: "string-width@npm:2.1.1"
   dependencies:
@@ -12370,16 +12464,6 @@ node-fetch@cjs:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: 08249c7046125d9d0a944a6e96cfe9ec66908d6b8a9db125531be6eb05fa0de047fd5542e9d43b4f987057f00a093b276b8d3e19af162a9c40db2681058fd306
-  languageName: node
-  linkType: hard
-
-"taketalk@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "taketalk@npm:1.0.0"
-  dependencies:
-    get-stdin: ^4.0.1
-    minimist: ^1.1.0
-  checksum: b9a6ae2d6e41573a18958b7ac76ab89a6f703a3abfb24fc1613171bece8b6bb76e68fa39da6077ed6cac22d0d39530e40e9078aea93f3cf9285f48b05e046a2b
   languageName: node
   linkType: hard
 
@@ -13474,16 +13558,6 @@ node-fetch@cjs:
   languageName: node
   linkType: hard
 
-"wrap-ansi@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "wrap-ansi@npm:2.1.0"
-  dependencies:
-    string-width: ^1.0.1
-    strip-ansi: ^3.0.1
-  checksum: 2dacd4b3636f7a53ee13d4d0fe7fa2ed9ad81e9967e17231924ea88a286ec4619a78288de8d41881ee483f4449ab2c0287cde8154ba1bd0126c10271101b2ee3
-  languageName: node
-  linkType: hard
-
 "wrap-ansi@npm:^3.0.1":
   version: 3.0.1
   resolution: "wrap-ansi@npm:3.0.1"
@@ -13763,25 +13837,6 @@ node-fetch@cjs:
   version: 1.0.0
   resolution: "yocto-queue@npm:1.0.0"
   checksum: 2cac84540f65c64ccc1683c267edce396b26b1e931aa429660aefac8fbe0188167b7aee815a3c22fa59a28a58d898d1a2b1825048f834d8d629f4c2a5d443801
-  languageName: node
-  linkType: hard
-
-"yosay@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "yosay@npm:2.0.2"
-  dependencies:
-    ansi-regex: ^2.0.0
-    ansi-styles: ^3.0.0
-    chalk: ^1.0.0
-    cli-boxes: ^1.0.0
-    pad-component: 0.0.1
-    string-width: ^2.0.0
-    strip-ansi: ^3.0.0
-    taketalk: ^1.0.0
-    wrap-ansi: ^2.0.0
-  bin:
-    yosay: cli.js
-  checksum: 7e0220ef1321a9f0db4632fb564ff0bad66523bd22bb5cd6435886145bba284a4c1f651f51d629f4a904c79b0bbf13940fee1e127746f9f20b3e5eae8336c6cb
   languageName: node
   linkType: hard
 
