@@ -1289,6 +1289,42 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@oclif/core@npm:^2.15.0":
+  version: 2.15.0
+  resolution: "@oclif/core@npm:2.15.0"
+  dependencies:
+    "@types/cli-progress": ^3.11.0
+    ansi-escapes: ^4.3.2
+    ansi-styles: ^4.3.0
+    cardinal: ^2.1.1
+    chalk: ^4.1.2
+    clean-stack: ^3.0.1
+    cli-progress: ^3.12.0
+    debug: ^4.3.4
+    ejs: ^3.1.8
+    get-package-type: ^0.1.0
+    globby: ^11.1.0
+    hyperlinker: ^1.0.0
+    indent-string: ^4.0.0
+    is-wsl: ^2.2.0
+    js-yaml: ^3.14.1
+    natural-orderby: ^2.0.3
+    object-treeify: ^1.1.33
+    password-prompt: ^1.1.2
+    slice-ansi: ^4.0.0
+    string-width: ^4.2.3
+    strip-ansi: ^6.0.1
+    supports-color: ^8.1.1
+    supports-hyperlinks: ^2.2.0
+    ts-node: ^10.9.1
+    tslib: ^2.5.0
+    widest-line: ^3.1.0
+    wordwrap: ^1.0.0
+    wrap-ansi: ^7.0.0
+  checksum: a4ef8ad00d9bc7cb48e5847bad7def6947f913875f4b0ecec65ab423a3c2a82c87df173c709c3c25396d545f60d20d17d562c474f66230d76de43061ce22ba90
+  languageName: node
+  linkType: hard
+
 "@oclif/plugin-autocomplete@npm:^2.1.9":
   version: 2.1.9
   resolution: "@oclif/plugin-autocomplete@npm:2.1.9"
@@ -1370,12 +1406,12 @@ __metadata:
   linkType: hard
 
 "@oclif/test@npm:^2.3.17":
-  version: 2.3.17
-  resolution: "@oclif/test@npm:2.3.17"
+  version: 2.5.6
+  resolution: "@oclif/test@npm:2.5.6"
   dependencies:
-    "@oclif/core": ^2.8.2
-    fancy-test: ^2.0.19
-  checksum: 105dfe6a2aa93662e9f2a457fe62b94fd459aa5cc0692cc8797cf268eb3359a153a00316d57f333690b47eb87ad25ed89e3664ad49949e96943fcee7a1781ec5
+    "@oclif/core": ^2.15.0
+    fancy-test: ^2.0.42
+  checksum: 41411ab54dcf477ee013d6f1081c0d595e5a6c61202d65bef9bbc8f124634cd5f12246b23e559d7a06531ca4b18b697b95049502429618666340e8e332703997
   languageName: node
   linkType: hard
 
@@ -5451,9 +5487,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fancy-test@npm:^2.0.19":
-  version: 2.0.21
-  resolution: "fancy-test@npm:2.0.21"
+"fancy-test@npm:^2.0.42":
+  version: 2.0.42
+  resolution: "fancy-test@npm:2.0.42"
   dependencies:
     "@types/chai": "*"
     "@types/lodash": "*"
@@ -5461,9 +5497,9 @@ __metadata:
     "@types/sinon": "*"
     lodash: ^4.17.13
     mock-stdin: ^1.0.0
-    nock: ^13.3.1
+    nock: ^13.3.3
     stdout-stderr: ^0.1.9
-  checksum: f8cf3923f5a8a8caa22307ae26e378ae72f54922fffd8bd01ee8b4c7216f8ce4aa1b637cecacac21a998a8c02d490b7f35c0bc617d72bf23b82645a09479d8c3
+  checksum: 48f802bcb70da9abbe1a8b136aef1912ea9346c16d4bb653f99c54d5d9c318831397f7f88ce3aee3960fb3a9f9a479032bc56e7e494390993cb9925be8b6d37a
   languageName: node
   linkType: hard
 
@@ -9178,15 +9214,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nock@npm:^13.3.1":
-  version: 13.3.1
-  resolution: "nock@npm:13.3.1"
+"nock@npm:^13.3.3":
+  version: 13.3.3
+  resolution: "nock@npm:13.3.3"
   dependencies:
     debug: ^4.1.0
     json-stringify-safe: ^5.0.1
     lodash: ^4.17.21
     propagate: ^2.0.0
-  checksum: 0f2a73e8432f6b5650656c53eef99f9e5bbde3df538dc2f07057edc4438cfc61a394c9d06dd82e60f6e86d42433f20f3c04364a1f088beee7bf03a24e3f0fdd0
+  checksum: e3e4f0fb777ac63d74f89bbb7aebe8e815b891b64ac71983d91686f725fdab856fe189cf2fe23d4add9f5dd5da53f3568106a61116a771ce0f4ed0f5ad7b035b
   languageName: node
   linkType: hard
 
