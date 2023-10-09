@@ -41,7 +41,7 @@
     "eslint-config-oclif-typescript": "^1.0.3",
     "eslint-import-resolver-typescript": "^3.5.4",
     "eslint-plugin-import": "^2.27.5",
-    "execa": "^7.1.1",
+    "execa": "^8.0.0",
     "husky": "^8.0.3",
     "is-ci": "^3.0.1",
     "jsonc-eslint-parser": "^2.2.0",
