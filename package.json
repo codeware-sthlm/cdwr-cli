@@ -9,7 +9,7 @@
   },
   "bugs": "https://github.com/codeware-sthlm/cdwr-cli/issues",
   "dependencies": {
-    "@oclif/core": "^2",
+    "@oclif/core": "^3.0.0",
     "@oclif/plugin-autocomplete": "^2.1.9",
     "@oclif/plugin-commands": "^2.2.5",
     "@oclif/plugin-help": "^5",
