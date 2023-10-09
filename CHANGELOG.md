@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/codeware-sthlm/cdwr-cli/compare/v1.3.0...v1.3.1) (2023-10-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @oclif/core to v3 ([290896e](https://github.com/codeware-sthlm/cdwr-cli/commit/290896e215079c00e8fe6e4e339f027dfa578384))
+
 # [1.3.0](https://github.com/codeware-sthlm/cdwr-cli/compare/v1.2.6...v1.3.0) (2023-05-01)
 
 
