@@ -15,7 +15,7 @@
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-not-found": "^2.3.17",
     "@oclif/plugin-search": "^0.0.16",
-    "@oclif/plugin-version": "^1.2.1",
+    "@oclif/plugin-version": "^2.0.0",
     "@oclif/plugin-warn-if-update-available": "^2.0.24",
     "inquirer": "^9.2.0",
     "ps-list": "^8.1.1",

@@ -286,7 +286,7 @@ __metadata:
     "@oclif/plugin-help": ^5
     "@oclif/plugin-not-found": ^2.3.17
     "@oclif/plugin-search": ^0.0.16
-    "@oclif/plugin-version": ^1.2.1
+    "@oclif/plugin-version": ^2.0.0
     "@oclif/plugin-warn-if-update-available": ^2.0.24
     "@oclif/test": ^3.0.0
     "@semantic-release/changelog": ^6.0.3
@@ -1322,6 +1322,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@oclif/core@npm:^3.0.4":
+  version: 3.0.5
+  resolution: "@oclif/core@npm:3.0.5"
+  dependencies:
+    ansi-escapes: ^4.3.2
+    ansi-styles: ^4.3.0
+    cardinal: ^2.1.1
+    chalk: ^4.1.2
+    clean-stack: ^3.0.1
+    cli-progress: ^3.12.0
+    debug: ^4.3.4
+    ejs: ^3.1.8
+    get-package-type: ^0.1.0
+    globby: ^11.1.0
+    hyperlinker: ^1.0.0
+    indent-string: ^4.0.0
+    is-wsl: ^2.2.0
+    js-yaml: ^3.14.1
+    natural-orderby: ^2.0.3
+    object-treeify: ^1.1.33
+    password-prompt: ^1.1.2
+    slice-ansi: ^4.0.0
+    string-width: ^4.2.3
+    strip-ansi: ^6.0.1
+    supports-color: ^8.1.1
+    supports-hyperlinks: ^2.2.0
+    widest-line: ^3.1.0
+    wordwrap: ^1.0.0
+    wrap-ansi: ^7.0.0
+  checksum: af6ee22c2091557b4f3eedccf7f3c3142cc79aabe1aaf6c1967d747c919084fcbb53084a2ed5998215a6c775f82771907553a7d19648fc33b1b29c6a8b4eb650
+  languageName: node
+  linkType: hard
+
 "@oclif/plugin-autocomplete@npm:^2.1.9":
   version: 2.1.9
   resolution: "@oclif/plugin-autocomplete@npm:2.1.9"
@@ -1378,12 +1411,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oclif/plugin-version@npm:^1.2.1":
-  version: 1.3.3
-  resolution: "@oclif/plugin-version@npm:1.3.3"
+"@oclif/plugin-version@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "@oclif/plugin-version@npm:2.0.1"
   dependencies:
-    "@oclif/core": ^2.8.2
-  checksum: ec6c73186172f172807abcfd1e19b323588762b7b4ee04ee254b45ac264b01e65d73cc04718f40371133e53bd5853db9a7c0f1a44f3ea091e1b9bbbf71d9136b
+    "@oclif/core": ^3.0.4
+  checksum: 94b7effd9454db32e22dc57fc76190edfbf12e9933fcbf57de5103929d3a2aa87f46337847eb59aee60e1c2fce33242f3220373a0731b5a6928225b9b221ad7c
   languageName: node
   linkType: hard
 
