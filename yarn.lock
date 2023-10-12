@@ -283,7 +283,7 @@ __metadata:
     "@oclif/core": ^3.0.0
     "@oclif/plugin-autocomplete": ^2.1.9
     "@oclif/plugin-commands": ^2.2.5
-    "@oclif/plugin-help": ^5
+    "@oclif/plugin-help": ^6.0.0
     "@oclif/plugin-not-found": ^2.3.17
     "@oclif/plugin-search": ^0.0.16
     "@oclif/plugin-version": ^1.2.1
@@ -1322,6 +1322,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@oclif/core@npm:^3.0.9":
+  version: 3.0.9
+  resolution: "@oclif/core@npm:3.0.9"
+  dependencies:
+    ansi-escapes: ^4.3.2
+    ansi-styles: ^4.3.0
+    cardinal: ^2.1.1
+    chalk: ^4.1.2
+    clean-stack: ^3.0.1
+    cli-progress: ^3.12.0
+    debug: ^4.3.4
+    ejs: ^3.1.8
+    get-package-type: ^0.1.0
+    globby: ^11.1.0
+    hyperlinker: ^1.0.0
+    indent-string: ^4.0.0
+    is-wsl: ^2.2.0
+    js-yaml: ^3.14.1
+    natural-orderby: ^2.0.3
+    object-treeify: ^1.1.33
+    password-prompt: ^1.1.2
+    slice-ansi: ^4.0.0
+    string-width: ^4.2.3
+    strip-ansi: ^6.0.1
+    supports-color: ^8.1.1
+    supports-hyperlinks: ^2.2.0
+    widest-line: ^3.1.0
+    wordwrap: ^1.0.0
+    wrap-ansi: ^7.0.0
+  checksum: 5067d688d07780b02df735521e15783014447ad6dfa779ecc11ad3c1aa70d1f5177ff3394b077b647fc2e80e6f12847667a5689dda7703fd50b1efb78d795294
+  languageName: node
+  linkType: hard
+
 "@oclif/plugin-autocomplete@npm:^2.1.9":
   version: 2.1.9
   resolution: "@oclif/plugin-autocomplete@npm:2.1.9"
@@ -1344,12 +1377,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oclif/plugin-help@npm:^5, @oclif/plugin-help@npm:^5.1.19":
+"@oclif/plugin-help@npm:^5.1.19":
   version: 5.2.9
   resolution: "@oclif/plugin-help@npm:5.2.9"
   dependencies:
     "@oclif/core": ^2.8.0
   checksum: bf75daa86db8aac91230824a9a4bb301b243738280128baa53f8dca6cc14b5340c2fca37733c84e89d242e7947094ba4fc46693a0a44bbd24144a50c1c364732
+  languageName: node
+  linkType: hard
+
+"@oclif/plugin-help@npm:^6.0.0":
+  version: 6.0.2
+  resolution: "@oclif/plugin-help@npm:6.0.2"
+  dependencies:
+    "@oclif/core": ^3.0.9
+  checksum: cbf3746b005a460aee0131cc908fa1bcd28458119e5fefc6b951cdf2880b0ccefab8062f9fb8fe8d6760f4d13f5075872ec8970a3d30b382b2365b802ed9ff88
   languageName: node
   linkType: hard
 
