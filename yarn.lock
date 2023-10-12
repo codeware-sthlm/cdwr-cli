@@ -285,7 +285,7 @@ __metadata:
     "@oclif/plugin-commands": ^2.2.5
     "@oclif/plugin-help": ^5
     "@oclif/plugin-not-found": ^2.3.17
-    "@oclif/plugin-search": ^0.0.16
+    "@oclif/plugin-search": ^1.0.0
     "@oclif/plugin-version": ^1.2.1
     "@oclif/plugin-warn-if-update-available": ^2.0.24
     "@oclif/test": ^3.0.0
@@ -767,6 +767,34 @@ __metadata:
   version: 1.2.1
   resolution: "@humanwhocodes/object-schema@npm:1.2.1"
   checksum: a824a1ec31591231e4bad5787641f59e9633827d0a2eaae131a288d33c9ef0290bd16fda8da6f7c0fcb014147865d12118df10db57f27f41e20da92369fcb3f1
+  languageName: node
+  linkType: hard
+
+"@inquirer/core@npm:^3.1.1":
+  version: 3.1.2
+  resolution: "@inquirer/core@npm:3.1.2"
+  dependencies:
+    "@inquirer/type": ^1.1.2
+    "@types/mute-stream": ^0.0.1
+    "@types/node": ^20.4.8
+    "@types/wrap-ansi": ^3.0.0
+    ansi-escapes: ^4.3.2
+    chalk: ^4.1.2
+    cli-spinners: ^2.9.0
+    cli-width: ^4.1.0
+    figures: ^3.2.0
+    mute-stream: ^1.0.0
+    run-async: ^3.0.0
+    strip-ansi: ^6.0.1
+    wrap-ansi: ^6.2.0
+  checksum: bf9170f55aa009d57cdc9d5be5c5df4c5dfb3989fb8ecbabfe4c8db82ad4173decd9023df8c2a12c6637add84972a996f2abb8e5f44a596afab317c45eb67ed8
+  languageName: node
+  linkType: hard
+
+"@inquirer/type@npm:^1.1.2":
+  version: 1.1.5
+  resolution: "@inquirer/type@npm:1.1.5"
+  checksum: 5417e10978b7fbbb691c64259261d220ab12b95d05a7092dba228ce71e830385e6da26669e45916993b367177f3d99157a95ff09a0ad7075f0545ef9c1a0c81b
   languageName: node
   linkType: hard
 
@@ -1322,6 +1350,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@oclif/core@npm:^3.0.9":
+  version: 3.0.9
+  resolution: "@oclif/core@npm:3.0.9"
+  dependencies:
+    ansi-escapes: ^4.3.2
+    ansi-styles: ^4.3.0
+    cardinal: ^2.1.1
+    chalk: ^4.1.2
+    clean-stack: ^3.0.1
+    cli-progress: ^3.12.0
+    debug: ^4.3.4
+    ejs: ^3.1.8
+    get-package-type: ^0.1.0
+    globby: ^11.1.0
+    hyperlinker: ^1.0.0
+    indent-string: ^4.0.0
+    is-wsl: ^2.2.0
+    js-yaml: ^3.14.1
+    natural-orderby: ^2.0.3
+    object-treeify: ^1.1.33
+    password-prompt: ^1.1.2
+    slice-ansi: ^4.0.0
+    string-width: ^4.2.3
+    strip-ansi: ^6.0.1
+    supports-color: ^8.1.1
+    supports-hyperlinks: ^2.2.0
+    widest-line: ^3.1.0
+    wordwrap: ^1.0.0
+    wrap-ansi: ^7.0.0
+  checksum: 5067d688d07780b02df735521e15783014447ad6dfa779ecc11ad3c1aa70d1f5177ff3394b077b647fc2e80e6f12847667a5689dda7703fd50b1efb78d795294
+  languageName: node
+  linkType: hard
+
 "@oclif/plugin-autocomplete@npm:^2.1.9":
   version: 2.1.9
   resolution: "@oclif/plugin-autocomplete@npm:2.1.9"
@@ -1365,16 +1426,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oclif/plugin-search@npm:^0.0.16":
-  version: 0.0.16
-  resolution: "@oclif/plugin-search@npm:0.0.16"
+"@oclif/plugin-search@npm:^1.0.0":
+  version: 1.0.2
+  resolution: "@oclif/plugin-search@npm:1.0.2"
   dependencies:
-    "@oclif/core": ^2.8.2
-    chalk: ^4
-    fuse.js: ^6.6.2
-    inquirer: ^8.2.5
-    rxjs: ^7.8.0
-  checksum: c3e450946f57718b939eb2335396c04e02d723833fa53013954adf4963b13f44d1f374457c112bdab544acdde1857bb9ba1a7c0b5231287ed0fe50ad693b30c5
+    "@oclif/core": ^3.0.9
+    inquirer-autocomplete-standalone: ^0.7.0
+  checksum: b92d13fa0b18bb4c3ce3811316358c6d1a1969006fda527e63a1fad7d9157c43b46561b52eeeb665820598092b80769648d9cf053d67137bbe0667287b7c33a9
   languageName: node
   linkType: hard
 
@@ -2125,6 +2183,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/mute-stream@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "@types/mute-stream@npm:0.0.1"
+  dependencies:
+    "@types/node": "*"
+  checksum: 01bb9f45a77b691538cba7f0c89166a5bfb112993056ae06a8218cd47d417a5f6a5cfc31f0d31293790c647d27564fe6aa39aa9cb2ef08792d42ed40f18de8d5
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*, @types/node@npm:^18.0.0":
   version: 18.16.3
   resolution: "@types/node@npm:18.16.3"
@@ -2136,6 +2203,15 @@ __metadata:
   version: 15.14.9
   resolution: "@types/node@npm:15.14.9"
   checksum: 49f7f0522a3af4b8389aee660e88426490cd54b86356672a1fedb49919a8797c00d090ec2dcc4a5df34edc2099d57fc2203d796c4e7fbd382f2022ccd789eee7
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^20.4.8":
+  version: 20.8.5
+  resolution: "@types/node@npm:20.8.5"
+  dependencies:
+    undici-types: ~5.25.1
+  checksum: 4bca4e4f6307a6f5dc78812015eca9c5a998b35fcf3ba4058c9851d3dde2b22c914fa25a85b804eab5af2ab95375d15943dce8e9ba5e01d15f4bf516ca0d2816
   languageName: node
   linkType: hard
 
@@ -2201,6 +2277,13 @@ __metadata:
     "@types/expect": ^1.20.4
     "@types/node": "*"
   checksum: 8e6e341860a2a024d5802517fb171ffc66bfbd91b0eefe8dd4376e08733e468781417ba861b9d32bb8207707cf554e3aeb60d08297c5e666a40520af95082e2d
+  languageName: node
+  linkType: hard
+
+"@types/wrap-ansi@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@types/wrap-ansi@npm:3.0.0"
+  checksum: 492f0610093b5802f45ca292777679bb9b381f1f32ae939956dd9e00bf81dba7cc99979687620a2817d9a7d8b59928207698166c47a0861c6a2e5c30d4aaf1e9
   languageName: node
   linkType: hard
 
@@ -3568,7 +3651,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4, chalk@npm:^4.0.0, chalk@npm:^4.0.2, chalk@npm:^4.1.0, chalk@npm:^4.1.1, chalk@npm:^4.1.2":
+"chalk@npm:^4.0.0, chalk@npm:^4.0.2, chalk@npm:^4.1.0, chalk@npm:^4.1.1, chalk@npm:^4.1.2":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -3765,6 +3848,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cli-spinners@npm:^2.9.0":
+  version: 2.9.1
+  resolution: "cli-spinners@npm:2.9.1"
+  checksum: 1780618be58309c469205bc315db697934bac68bce78cd5dfd46248e507a533172d623c7348ecfd904734f597ce0a4e5538684843d2cfb7af485d4466699940c
+  languageName: node
+  linkType: hard
+
 "cli-table3@npm:^0.6.1, cli-table3@npm:^0.6.3":
   version: 0.6.3
   resolution: "cli-table3@npm:0.6.3"
@@ -3818,6 +3908,13 @@ __metadata:
   version: 4.0.0
   resolution: "cli-width@npm:4.0.0"
   checksum: 1ec12311217cc8b2d018646a58b61424d2348def598fb58ba2c32e28f0bcb59a35cef168110311cefe3340abf00e5171b351de6c3e2c084bd1642e6e2a9e144e
+  languageName: node
+  linkType: hard
+
+"cli-width@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "cli-width@npm:4.1.0"
+  checksum: 0a79cff2dbf89ef530bcd54c713703ba94461457b11e5634bd024c78796ed21401e32349c004995954e06f442d82609287e7aabf6a5f02c919a1cf3b9b6854ff
   languageName: node
   linkType: hard
 
@@ -5701,7 +5798,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"figures@npm:^3.0.0":
+"figures@npm:^3.0.0, figures@npm:^3.2.0":
   version: 3.2.0
   resolution: "figures@npm:3.2.0"
   dependencies:
@@ -6033,13 +6130,6 @@ __metadata:
   version: 1.2.3
   resolution: "functions-have-names@npm:1.2.3"
   checksum: c3f1f5ba20f4e962efb71344ce0a40722163e85bee2101ce25f88214e78182d2d2476aa85ef37950c579eb6cf6ee811c17b3101bb84004bb75655f3e33f3fdb5
-  languageName: node
-  linkType: hard
-
-"fuse.js@npm:^6.6.2":
-  version: 6.6.2
-  resolution: "fuse.js@npm:6.6.2"
-  checksum: 17ae758ce205276ebd88bd9c9f088a100be0b4896abac9f6b09847151269d1690f41d7f98ff5813d4a58973162dbd99d0072ce807020fee6f9de60170f6b08eb
   languageName: node
   linkType: hard
 
@@ -6929,7 +7019,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:^8.0.0, inquirer@npm:^8.2.5":
+"inquirer-autocomplete-standalone@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "inquirer-autocomplete-standalone@npm:0.7.0"
+  dependencies:
+    "@inquirer/core": ^3.1.1
+    "@inquirer/type": ^1.1.2
+    figures: ^5.0.0
+    picocolors: ^1.0.0
+  checksum: c5b33255f838f44534c2474b2570ee9ba470b9bd5bff2ad6c98e6af3f160c14d1b20385bc1ade780a63f5395b742c712ab3103d8120177a7601bb01e30dd337f
+  languageName: node
+  linkType: hard
+
+"inquirer@npm:^8.0.0":
   version: 8.2.5
   resolution: "inquirer@npm:8.2.5"
   dependencies:
@@ -9266,7 +9368,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mute-stream@npm:1.0.0, mute-stream@npm:~1.0.0":
+"mute-stream@npm:1.0.0, mute-stream@npm:^1.0.0, mute-stream@npm:~1.0.0":
   version: 1.0.0
   resolution: "mute-stream@npm:1.0.0"
   checksum: 36fc968b0e9c9c63029d4f9dc63911950a3bdf55c9a87f58d3a266289b67180201cade911e7699f8b2fa596b34c9db43dad37649e3f7fdd13c3bb9edb0017ee7
@@ -11554,6 +11656,13 @@ node-fetch@cjs:
   languageName: node
   linkType: hard
 
+"run-async@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "run-async@npm:3.0.0"
+  checksum: 280c03d5a88603f48103fc6fd69f07fb0c392a1e0d319c34ec96a2516030e07ba06f79231a563c78698b882649c2fc1fda601bc84705f57d50efcd1fa506cfc0
+  languageName: node
+  linkType: hard
+
 "run-parallel@npm:^1.1.9":
   version: 1.2.0
   resolution: "run-parallel@npm:1.2.0"
@@ -13090,6 +13199,13 @@ node-fetch@cjs:
   languageName: node
   linkType: hard
 
+"undici-types@npm:~5.25.1":
+  version: 5.25.3
+  resolution: "undici-types@npm:5.25.3"
+  checksum: ec9d2cc36520cbd9fbe3b3b6c682a87fe5be214699e1f57d1e3d9a2cb5be422e62735f06e0067dc325fd3dd7404c697e4d479f9147dc8a804e049e29f357f2ff
+  languageName: node
+  linkType: hard
+
 "unified@npm:^9.0.0":
   version: 9.2.2
   resolution: "unified@npm:9.2.2"
@@ -13703,6 +13819,17 @@ node-fetch@cjs:
     string-width: ^2.1.1
     strip-ansi: ^4.0.0
   checksum: 1ceed09986d58cf6e0b88ea29084e70ef3463b3b891a04a8dbf245abb1fb678358986bdc43e12bcc92a696ced17327d079bc796f4d709d15aad7b8c1a7e7c83a
+  languageName: node
+  linkType: hard
+
+"wrap-ansi@npm:^6.2.0":
+  version: 6.2.0
+  resolution: "wrap-ansi@npm:6.2.0"
+  dependencies:
+    ansi-styles: ^4.0.0
+    string-width: ^4.1.0
+    strip-ansi: ^6.0.0
+  checksum: 6cd96a410161ff617b63581a08376f0cb9162375adeb7956e10c8cd397821f7eb2a6de24eb22a0b28401300bf228c86e50617cd568209b5f6775b93c97d2fe3a
   languageName: node
   linkType: hard
 
