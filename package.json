@@ -52,7 +52,7 @@
     "oclif": "^3",
     "prettier": "^2.8.4",
     "rxjs": "^7.8.0",
-    "semantic-release": "^21.0.1",
+    "semantic-release": "^24.0.0",
     "semantic-release-slack-bot": "^4.0.1",
     "shx": "^0.3.3",
     "tsc-alias": "^1.8.5",
